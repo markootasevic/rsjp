@@ -8,4 +8,9 @@ class UkupanBrojZahteva extends Model
 {
     protected $table = 'ukupanbrojzahteva';
     protected $primaryKey = "ukupanBrojZahtevaID";
+
+    public function opstiPodaci()
+    {
+        return $this->hasMany('OpstiPodaci','ukupanBrojZahtevaID','ukupanBrojZahtevaID');
+    }
 }

@@ -9,4 +9,9 @@ class Poddelatnost extends Model
     //
     protected $table = 'poddelatnost';
     protected $primaryKey = "poddelatnostRbr";
+
+    public function delatnost()
+    {
+        return $this->belongsTo('Delatnost', 'delatnostRbr', 'delatnostRbr');
+    }
 }

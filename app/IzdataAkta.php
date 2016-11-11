@@ -8,4 +8,9 @@ class IzdataAkta extends Model
 {
     protected $table = 'izdataakta';
     protected $primaryKey = "aktaID";
+
+    public function obrazacZaPodosenjeZahteva()
+    {
+        return $this->belongsTo('ObrazacZaPodnosenjeZahteva', 'obrazacID', 'obrazacID');
+    }
 }

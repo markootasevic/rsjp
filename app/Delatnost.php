@@ -10,4 +10,14 @@ class Delatnost extends Model
     protected $table = 'delatnost';
     protected $primaryKey = "delatnostRbr";
 
+    public function opstiPodaci()
+    {
+        return $this->belongsTo('OpstiPodaci', 'opstiPodaciID', 'opstiPodaciID');
+    }
+
+    public function poddelatnosti()
+    {
+        return $this->hasMany('Poddelatnost','delatnostRbr','delatnostRbr');
+    }
+
 }
