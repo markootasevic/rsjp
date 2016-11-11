@@ -18,3 +18,9 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+
+Route::post('/postFormular','FormularController@postFormular');
+
+Route::get('/', function(){
+	return view('Forma_Procedure');
+});
