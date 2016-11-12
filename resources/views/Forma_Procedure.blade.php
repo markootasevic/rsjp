@@ -2906,16 +2906,16 @@
                             </div>
                             <div class="col-lg-11" >
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor3g1" name="pribavljanjePoSlDuz[]" disabled="">Eлектронски увид</label>
+                                <label><input type="checkbox" id="izbor3g1" name="pribavljanjePoSlDuz[]" disabled="" value="Eлектронски увид">Eлектронски увид</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor4g1" name="pribavljanjePoSlDuz[]" disabled="">Електронски допис</label>
+                                <label><input type="checkbox" id="izbor4g1" name="pribavljanjePoSlDuz[]" disabled="" value="Електронски допис">Електронски допис</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor5g1" name="pribavljanjePoSlDuz[]" disabled="">Редовна пошта</label>
+                                <label><input type="checkbox" id="izbor5g1" name="pribavljanjePoSlDuz[]" disabled="" value="Редовна пошта">Редовна пошта</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor6g1" name="pribavljanjePoSlDuz[]" disabled="">Други начин</label>
+                                <label><input type="checkbox" id="izbor6g1" name="pribavljanjePoSlDuz[]" disabled="" value="Други начин">Други начин</label>
                             </div>
                             </div>
                             <span class="tooltiptext" id = "tooltiptext1">У овом пољу означити, пре свега, да ли документ прилаже подносилац захтева или га надлежни орган прибавља од других органа / организација, по службеној дужности. Уколико се документ у пракси прибавља по службеној дужности, потребно је означити на који начин надлежни орган прибавља потребни документ (електронски увид, електронски допис, редовна пошта, други начин).</span>
@@ -3055,16 +3055,16 @@
                             </div>
                             <div class="col-lg-11" >
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor3g2" name="pribavljanjePoSlDuz2[]" disabled="">Eлектронски увид</label>
+                                <label><input type="checkbox" id="izbor3g2" name="pribavljanjePoSlDuz[]" disabled="" value="Eлектронски увид">Eлектронски увид</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor4g2" name="pribavljanjePoSlDuz2[]" disabled="">Електронски допис</label>
+                                <label><input type="checkbox" id="izbor4g2" name="pribavljanjePoSlDuz[]" disabled="" value="Електронски допис">Електронски допис</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor5g2" name="pribavljanjePoSlDuz2[]" disabled="">Редовна пошта</label>
+                                <label><input type="checkbox" id="izbor5g2" name="pribavljanjePoSlDuz[]" disabled="" value="Редовна пошта">Редовна пошта</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor6g2" name="pribavljanjePoSlDuz2[]" disabled="">Други начин</label>
+                                <label><input type="checkbox" id="izbor6g2" name="pribavljanjePoSlDuz[]" disabled="" value="Други начин">Други начин</label>
                             </div>
                             </div>
                             <span class="tooltiptext" id = "tooltiptext1">У овом пољу означити, пре свега, да ли документ прилаже подносилац захтева или га надлежни орган прибавља од других органа / организација, по службеној дужности. Уколико се документ у пракси прибавља по службеној дужности, потребно је означити на који начин надлежни орган прибавља потребни документ (електронски увид, електронски допис, редовна пошта, други начин).</span>
@@ -3198,17 +3198,18 @@
                             <div class="col-lg-1">
                             </div>
                             <div class="col-lg-11" >
+                            <div class="col-lg-11" >
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor3g3" name="pribavljanjePoSlDuz3[]" disabled="">Eлектронски увид</label>
+                                <label><input type="checkbox" id="izbor3g1" name="pribavljanjePoSlDuz[]" disabled="" value="Eлектронски увид">Eлектронски увид</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor4g3" name="pribavljanjePoSlDuz3[]" disabled="">Електронски допис</label>
+                                <label><input type="checkbox" id="izbor4g1" name="pribavljanjePoSlDuz[]" disabled="" value="Електронски допис">Електронски допис</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor5g3" name="pribavljanjePoSlDuz3[]" disabled="">Редовна пошта</label>
+                                <label><input type="checkbox" id="izbor5g1" name="pribavljanjePoSlDuz[]" disabled="" value="Редовна пошта">Редовна пошта</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor6g3" name="pribavljanjePoSlDuz3[]" disabled="">Други начин</label>
+                                <label><input type="checkbox" id="izbor6g1" name="pribavljanjePoSlDuz[]" disabled="" value="Други начин">Други начин</label>
                             </div>
                             </div>
                             <span class="tooltiptext" id = "tooltiptext1">У овом пољу означити, пре свега, да ли документ прилаже подносилац захтева или га надлежни орган прибавља од других органа / организација, по службеној дужности. Уколико се документ у пракси прибавља по службеној дужности, потребно је означити на који начин надлежни орган прибавља потребни документ (електронски увид, електронски допис, редовна пошта, други начин).</span>
@@ -3344,16 +3345,16 @@
                             </div>
                             <div class="col-lg-11" >
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor3g4" name="pribavljanjePoSlDuz4[]" disabled="">Eлектронски увид</label>
+                                <label><input type="checkbox" id="izbor3g4" name="pribavljanjePoSlDuz[]" disabled="" value="Eлектронски увид">Eлектронски увид</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor4g4" name="pribavljanjePoSlDuz4[]" disabled="">Електронски допис</label>
+                                <label><input type="checkbox" id="izbor4g4" name="pribavljanjePoSlDuz[]" disabled="" value="Електронски допис">Електронски допис</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor5g4" name="pribavljanjePoSlDuz4[]" disabled="">Редовна пошта</label>
+                                <label><input type="checkbox" id="izbor5g4" name="pribavljanjePoSlDuz[]" disabled="" value="Редовна пошта">Редовна пошта</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor6g4" name="pribavljanjePoSlDuz4[]" disabled="">Други начин</label>
+                                <label><input type="checkbox" id="izbor6g4" name="pribavljanjePoSlDuz[]" disabled="" value="Други начин">Други начин</label>
                             </div>
                             </div>
                             <span class="tooltiptext" id = "tooltiptext1">У овом пољу означити, пре свега, да ли документ прилаже подносилац захтева или га надлежни орган прибавља од других органа / организација, по службеној дужности. Уколико се документ у пракси прибавља по службеној дужности, потребно је означити на који начин надлежни орган прибавља потребни документ (електронски увид, електронски допис, редовна пошта, други начин).</span>
@@ -3489,16 +3490,16 @@
                             </div>
                             <div class="col-lg-11" >
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor3g5" name="pribavljanjePoSlDuz5[]" disabled="">Eлектронски увид</label>
+                                <label><input type="checkbox" id="izbor3g5" name="pribavljanjePoSlDuz[]" disabled="" value="Eлектронски увид">Eлектронски увид</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor4g5" name="pribavljanjePoSlDuz5[]" disabled="">Електронски допис</label>
+                                <label><input type="checkbox" id="izbor4g5" name="pribavljanjePoSlDuz[]" disabled="" value="Електронски допис">Електронски допис</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor5g5" name="pribavljanjePoSlDuz5[]" disabled="">Редовна пошта</label>
+                                <label><input type="checkbox" id="izbor5g5" name="pribavljanjePoSlDuz[]" disabled="" value="Редовна пошта">Редовна пошта</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor6g5" name="pribavljanjePoSlDuz5[]" disabled="">Други начин</label>
+                                <label><input type="checkbox" id="izbor6g5" name="pribavljanjePoSlDuz[]" disabled="" value="Други начин">Други начин</label>
                             </div>
                             </div>
                             <span class="tooltiptext" id = "tooltiptext1">У овом пољу означити, пре свега, да ли документ прилаже подносилац захтева или га надлежни орган прибавља од других органа / организација, по службеној дужности. Уколико се документ у пракси прибавља по службеној дужности, потребно је означити на који начин надлежни орган прибавља потребни документ (електронски увид, електронски допис, редовна пошта, други начин).</span>
@@ -3635,16 +3636,16 @@
                             </div>
                             <div class="col-lg-11" >
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor3g6" name="pribavljanjePoSlDuz6[]" disabled="">Eлектронски увид</label>
+                                <label><input type="checkbox" id="izbor3g6" name="pribavljanjePoSlDuz[]" disabled="" value="Eлектронски увид">Eлектронски увид</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor4g6" name="pribavljanjePoSlDuz6[]" disabled="">Електронски допис</label>
+                                <label><input type="checkbox" id="izbor4g6" name="pribavljanjePoSlDuz[]" disabled="" value="Електронски допис">Електронски допис</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor5g6" name="pribavljanjePoSlDuz6[]" disabled="">Редовна пошта</label>
+                                <label><input type="checkbox" id="izbor5g6" name="pribavljanjePoSlDuz[]" disabled="" value="Редовна пошта">Редовна пошта</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor6g6" name="pribavljanjePoSlDuz6[]" disabled="">Други начин</label>
+                                <label><input type="checkbox" id="izbor6g6" name="pribavljanjePoSlDuz[]" disabled="" value="Други начин">Други начин</label>
                             </div>
                             </div>
                             <span class="tooltiptext" id = "tooltiptext1">У овом пољу означити, пре свега, да ли документ прилаже подносилац захтева или га надлежни орган прибавља од других органа / организација, по службеној дужности. Уколико се документ у пракси прибавља по службеној дужности, потребно је означити на који начин надлежни орган прибавља потребни документ (електронски увид, електронски допис, редовна пошта, други начин).</span>
@@ -3780,16 +3781,16 @@
                             </div>
                             <div class="col-lg-11" >
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor3g7" name="pribavljanjePoSlDuz7[]" disabled="">Eлектронски увид</label>
+                                <label><input type="checkbox" id="izbor3g7" name="pribavljanjePoSlDuz[]" disabled="" value="Eлектронски увид">Eлектронски увид</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor4g7" name="pribavljanjePoSlDuz7[]" disabled="">Електронски допис</label>
+                                <label><input type="checkbox" id="izbor4g7" name="pribavljanjePoSlDuz[]" disabled="" value="Електронски допис">Електронски допис</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor5g7" name="pribavljanjePoSlDuz7[]" disabled="">Редовна пошта</label>
+                                <label><input type="checkbox" id="izbor5g7" name="pribavljanjePoSlDuz[]" disabled="" value="Редовна пошта">Редовна пошта</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor6g7" name="pribavljanjePoSlDuz7[]" disabled="">Други начин</label>
+                                <label><input type="checkbox" id="izbor6g7" name="pribavljanjePoSlDuz[]" disabled="" value="Други начин">Други начин</label>
                             </div>
                             </div>
                             <span class="tooltiptext" id = "tooltiptext1">У овом пољу означити, пре свега, да ли документ прилаже подносилац захтева или га надлежни орган прибавља од других органа / организација, по службеној дужности. Уколико се документ у пракси прибавља по службеној дужности, потребно је означити на који начин надлежни орган прибавља потребни документ (електронски увид, електронски допис, редовна пошта, други начин).</span>
@@ -3926,16 +3927,16 @@
                             </div>
                             <div class="col-lg-11" >
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor3g8" name="pribavljanjePoSlDuz8[]" disabled="">Eлектронски увид</label>
+                                <label><input type="checkbox" id="izbor3g8" name="pribavljanjePoSlDuz[]" disabled="" value="Eлектронски увид">Eлектронски увид</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor4g8" name="pribavljanjePoSlDuz8[]" disabled="">Електронски допис</label>
+                                <label><input type="checkbox" id="izbor4g8" name="pribavljanjePoSlDuz[]" disabled="" value="Електронски допис">Електронски допис</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor5g8" name="pribavljanjePoSlDuz8[]" disabled="">Редовна пошта</label>
+                                <label><input type="checkbox" id="izbor5g8" name="pribavljanjePoSlDuz[]" disabled="" value="Редовна пошта">Редовна пошта</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor6g8" name="pribavljanjePoSlDuz8[]" disabled="">Други начин</label>
+                                <label><input type="checkbox" id="izbor6g8" name="pribavljanjePoSlDuz[]" disabled="" value="Други начин">Други начин</label>
                             </div>
                             </div>
                             <span class="tooltiptext" id = "tooltiptext1">У овом пољу означити, пре свега, да ли документ прилаже подносилац захтева или га надлежни орган прибавља од других органа / организација, по службеној дужности. Уколико се документ у пракси прибавља по службеној дужности, потребно је означити на који начин надлежни орган прибавља потребни документ (електронски увид, електронски допис, редовна пошта, други начин).</span>
@@ -4071,16 +4072,16 @@
                             </div>
                             <div class="col-lg-11" >
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor3g9" name="pribavljanjePoSlDuz9[]" disabled="">Eлектронски увид</label>
+                                <label><input type="checkbox" id="izbor3g9" name="pribavljanjePoSlDuz[]" disabled="" value="Eлектронски увид">Eлектронски увид</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor4g9" name="pribavljanjePoSlDuz9[]" disabled="">Електронски допис</label>
+                                <label><input type="checkbox" id="izbor4g9" name="pribavljanjePoSlDuz[]" disabled="" value="Електронски допис">Електронски допис</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor5g9" name="pribavljanjePoSlDuz9[]" disabled="">Редовна пошта</label>
+                                <label><input type="checkbox" id="izbor5g9" name="pribavljanjePoSlDuz[]" disabled="" value="Редовна пошта">Редовна пошта</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor6g9" name="pribavljanjePoSlDuz9[]" disabled="">Други начин</label>
+                                <label><input type="checkbox" id="izbor6g9" name="pribavljanjePoSlDuz[]" disabled="" value="Други начин">Други начин</label>
                             </div>
                             </div>
                             <span class="tooltiptext" id = "tooltiptext1">У овом пољу означити, пре свега, да ли документ прилаже подносилац захтева или га надлежни орган прибавља од других органа / организација, по службеној дужности. Уколико се документ у пракси прибавља по службеној дужности, потребно је означити на који начин надлежни орган прибавља потребни документ (електронски увид, електронски допис, редовна пошта, други начин).</span>
@@ -4218,16 +4219,16 @@
                             </div>
                             <div class="col-lg-11" >
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor3g10" name="pribavljanjePoSlDuz10[]" disabled="">Eлектронски увид</label>
+                                <label><input type="checkbox" id="izbor3g10" name="pribavljanjePoSlDuz[]" disabled="" value="Eлектронски увид">Eлектронски увид</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor4g10" name="pribavljanjePoSlDuz10[]" disabled="">Електронски допис</label>
+                                <label><input type="checkbox" id="izbor4g10" name="pribavljanjePoSlDuz[]" disabled="" value="Електронски допис">Електронски допис</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor5g10" name="pribavljanjePoSlDuz10[]" disabled="">Редовна пошта</label>
+                                <label><input type="checkbox" id="izbor5g10" name="pribavljanjePoSlDuz[]" disabled="" value="Редовна пошта">Редовна пошта</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor6g10" name="pribavljanjePoSlDuz10[]" disabled="">Други начин</label>
+                                <label><input type="checkbox" id="izbor6g10" name="pribavljanjePoSlDuz[]" disabled="" value="Други начин">Други начин</label>
                             </div>
                             </div>
                             <span class="tooltiptext" id = "tooltiptext1">У овом пољу означити, пре свега, да ли документ прилаже подносилац захтева или га надлежни орган прибавља од других органа / организација, по службеној дужности. Уколико се документ у пракси прибавља по службеној дужности, потребно је означити на који начин надлежни орган прибавља потребни документ (електронски увид, електронски допис, редовна пошта, други начин).</span>
@@ -4364,16 +4365,16 @@
                             </div>
                             <div class="col-lg-11" >
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor3g11" name="pribavljanjePoSlDuz11[]" disabled="">Eлектронски увид</label>
+                                <label><input type="checkbox" id="izbor3g11" name="pribavljanjePoSlDuz[]" disabled="" value="Eлектронски увид">Eлектронски увид</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor4g11" name="pribavljanjePoSlDuz11[]" disabled="">Електронски допис</label>
+                                <label><input type="checkbox" id="izbor4g11" name="pribavljanjePoSlDuz[]" disabled="" value="Електронски допис">Електронски допис</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor5g11" name="pribavljanjePoSlDuz11[]" disabled="">Редовна пошта</label>
+                                <label><input type="checkbox" id="izbor5g11" name="pribavljanjePoSlDuz[]" disabled="" value="Редовна пошта">Редовна пошта</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor6g11" name="pribavljanjePoSlDuz11[]" disabled="">Други начин</label>
+                                <label><input type="checkbox" id="izbor6g11" name="pribavljanjePoSlDuz[]" disabled="" value="Други начин">Други начин</label>
                             </div>
                             </div>
                             <span class="tooltiptext" id = "tooltiptext1">У овом пољу означити, пре свега, да ли документ прилаже подносилац захтева или га надлежни орган прибавља од других органа / организација, по службеној дужности. Уколико се документ у пракси прибавља по службеној дужности, потребно је означити на који начин надлежни орган прибавља потребни документ (електронски увид, електронски допис, редовна пошта, други начин).</span>
@@ -4510,16 +4511,16 @@
                             </div>
                             <div class="col-lg-11" >
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor3g12" name="pribavljanjePoSlDuz12[]" disabled="">Eлектронски увид</label>
+                                <label><input type="checkbox" id="izbor3g12" name="pribavljanjePoSlDuz[]" disabled="" value="Eлектронски увид">Eлектронски увид</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor4g12" name="pribavljanjePoSlDuz12[]" disabled="">Електронски допис</label>
+                                <label><input type="checkbox" id="izbor4g12" name="pribavljanjePoSlDuz[]" disabled="" value="Електронски допис">Електронски допис</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor5g12" name="pribavljanjePoSlDuz12[]" disabled="">Редовна пошта</label>
+                                <label><input type="checkbox" id="izbor5g12" name="pribavljanjePoSlDuz[]" disabled="" value="Редовна пошта">Редовна пошта</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor6g12" name="pribavljanjePoSlDuz12[]" disabled="">Други начин</label>
+                                <label><input type="checkbox" id="izbor6g12" name="pribavljanjePoSlDuz[]" disabled="" value="Други начин">Други начин</label>
                             </div>
                             </div>
                             <span class="tooltiptext" id = "tooltiptext1">У овом пољу означити, пре свега, да ли документ прилаже подносилац захтева или га надлежни орган прибавља од других органа / организација, по службеној дужности. Уколико се документ у пракси прибавља по службеној дужности, потребно је означити на који начин надлежни орган прибавља потребни документ (електронски увид, електронски допис, редовна пошта, други начин).</span>
@@ -4656,16 +4657,16 @@
                             </div>
                             <div class="col-lg-11" >
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor3g13" name="pribavljanjePoSlDuz13[]" disabled="">Eлектронски увид</label>
+                                <label><input type="checkbox" id="izbor3g13" name="pribavljanjePoSlDuz[]" disabled="" value="Eлектронски увид">Eлектронски увид</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor4g13" name="pribavljanjePoSlDuz13[]" disabled="">Електронски допис</label>
+                                <label><input type="checkbox" id="izbor4g13" name="pribavljanjePoSlDuz[]" disabled="" value="Електронски допис">Електронски допис</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor5g13" name="pribavljanjePoSlDuz13[]" disabled="">Редовна пошта</label>
+                                <label><input type="checkbox" id="izbor5g13" name="pribavljanjePoSlDuz[]" disabled="" value="Редовна пошта">Редовна пошта</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor6g13" name="pribavljanjePoSlDuz13[]" disabled="">Други начин</label>
+                                <label><input type="checkbox" id="izbor6g13" name="pribavljanjePoSlDuz[]" disabled="" value="Други начин">Други начин</label>
                             </div>
                             </div>
                             <span class="tooltiptext" id = "tooltiptext1">У овом пољу означити, пре свега, да ли документ прилаже подносилац захтева или га надлежни орган прибавља од других органа / организација, по службеној дужности. Уколико се документ у пракси прибавља по службеној дужности, потребно је означити на који начин надлежни орган прибавља потребни документ (електронски увид, електронски допис, редовна пошта, други начин).</span>
@@ -4802,16 +4803,16 @@
                             </div>
                             <div class="col-lg-11" >
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor3g14" name="pribavljanjePoSlDuz14[]" disabled="">Eлектронски увид</label>
+                                <label><input type="checkbox" id="izbor3g14" name="pribavljanjePoSlDuz[]" disabled="" value="Eлектронски увид">Eлектронски увид</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor4g14" name="pribavljanjePoSlDuz14[]" disabled="">Електронски допис</label>
+                                <label><input type="checkbox" id="izbor4g14" name="pribavljanjePoSlDuz[]" disabled="" value="Електронски допис">Електронски допис</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor5g14" name="pribavljanjePoSlDuz14[]" disabled="">Редовна пошта</label>
+                                <label><input type="checkbox" id="izbor5g14" name="pribavljanjePoSlDuz[]" disabled="" value="Редовна пошта">Редовна пошта</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor6g14" name="pribavljanjePoSlDuz14[]" disabled="">Други начин</label>
+                                <label><input type="checkbox" id="izbor6g14" name="pribavljanjePoSlDuz[]" disabled="" value="Други начин">Други начин</label>
                             </div>
                             </div>
                             <span class="tooltiptext" id = "tooltiptext1">У овом пољу означити, пре свега, да ли документ прилаже подносилац захтева или га надлежни орган прибавља од других органа / организација, по службеној дужности. Уколико се документ у пракси прибавља по службеној дужности, потребно је означити на који начин надлежни орган прибавља потребни документ (електронски увид, електронски допис, редовна пошта, други начин).</span>
@@ -4947,16 +4948,16 @@
                             </div>
                             <div class="col-lg-11" >
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor3g15" name="pribavljanjePoSlDuz15[]" disabled="">Eлектронски увид</label>
+                                <label><input type="checkbox" id="izbor3g15" name="pribavljanjePoSlDuz[]" disabled="" value="Eлектронски увид">Eлектронски увид</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor4g15" name="pribavljanjePoSlDuz15[]" disabled="">Електронски допис</label>
+                                <label><input type="checkbox" id="izbor4g15" name="pribavljanjePoSlDuz[]" disabled="" value="Електронски допис">Електронски допис</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor5g15" name="pribavljanjePoSlDuz15[]" disabled="">Редовна пошта</label>
+                                <label><input type="checkbox" id="izbor5g15" name="pribavljanjePoSlDuz[]" disabled="" value="Редовна пошта">Редовна пошта</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor6g15" name="pribavljanjePoSlDuz15[]" disabled="">Други начин</label>
+                                <label><input type="checkbox" id="izbor6g15" name="pribavljanjePoSlDuz[]" disabled="" value="Други начин">Други начин</label>
                             </div>
                             </div>
                             <span class="tooltiptext" id = "tooltiptext1">У овом пољу означити, пре свега, да ли документ прилаже подносилац захтева или га надлежни орган прибавља од других органа / организација, по службеној дужности. Уколико се документ у пракси прибавља по службеној дужности, потребно је означити на који начин надлежни орган прибавља потребни документ (електронски увид, електронски допис, редовна пошта, други начин).</span>
@@ -5093,16 +5094,16 @@
                             </div>
                             <div class="col-lg-11" >
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor3g16" name="pribavljanjePoSlDuz16[]" disabled="">Eлектронски увид</label>
+                                <label><input type="checkbox" id="izbor3g16" name="pribavljanjePoSlDuz[]" disabled="" value="Eлектронски увид">Eлектронски увид</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor4g16" name="pribavljanjePoSlDuz16[]" disabled="">Електронски допис</label>
+                                <label><input type="checkbox" id="izbor4g16" name="pribavljanjePoSlDuz[]" disabled="" value="Електронски допис">Електронски допис</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor5g16" name="pribavljanjePoSlDuz16[]" disabled="">Редовна пошта</label>
+                                <label><input type="checkbox" id="izbor5g16" name="pribavljanjePoSlDuz[]" disabled="" value="Редовна пошта">Редовна пошта</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor6g16" name="pribavljanjePoSlDuz16[]" disabled="">Други начин</label>
+                                <label><input type="checkbox" id="izbor6g16" name="pribavljanjePoSlDuz[]" disabled="" value="Други начин">Други начин</label>
                             </div>
                             </div>
                             <span class="tooltiptext" id = "tooltiptext1">У овом пољу означити, пре свега, да ли документ прилаже подносилац захтева или га надлежни орган прибавља од других органа / организација, по службеној дужности. Уколико се документ у пракси прибавља по службеној дужности, потребно је означити на који начин надлежни орган прибавља потребни документ (електронски увид, електронски допис, редовна пошта, други начин).</span>
@@ -5239,16 +5240,16 @@
                             </div>
                             <div class="col-lg-11" >
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor3g17" name="pribavljanjePoSlDuz17[]" disabled="">Eлектронски увид</label>
+                                <label><input type="checkbox" id="izbor3g17" name="pribavljanjePoSlDuz[]" disabled="" value="Eлектронски увид">Eлектронски увид</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor4g17" name="pribavljanjePoSlDuz17[]" disabled="">Електронски допис</label>
+                                <label><input type="checkbox" id="izbor4g17" name="pribavljanjePoSlDuz[]" disabled="" value="Електронски допис">Електронски допис</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor5g17" name="pribavljanjePoSlDuz17[]" disabled="">Редовна пошта</label>
+                                <label><input type="checkbox" id="izbor5g17" name="pribavljanjePoSlDuz[]" disabled="" value="Редовна пошта">Редовна пошта</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor6g17" name="pribavljanjePoSlDuz17[]" disabled="">Други начин</label>
+                                <label><input type="checkbox" id="izbor6g17" name="pribavljanjePoSlDuz[]" disabled="" value="Други начин">Други начин</label>
                             </div>
                             </div>
                             <span class="tooltiptext" id = "tooltiptext1">У овом пољу означити, пре свега, да ли документ прилаже подносилац захтева или га надлежни орган прибавља од других органа / организација, по службеној дужности. Уколико се документ у пракси прибавља по службеној дужности, потребно је означити на који начин надлежни орган прибавља потребни документ (електронски увид, електронски допис, редовна пошта, други начин).</span>
@@ -5384,16 +5385,16 @@
                             </div>
                             <div class="col-lg-11" >
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor3g18" name="pribavljanjePoSlDuz18[]" disabled="">Eлектронски увид</label>
+                                <label><input type="checkbox" id="izbor3g18" name="pribavljanjePoSlDuz[]" disabled="" value="Eлектронски увид">Eлектронски увид</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor4g18" name="pribavljanjePoSlDuz18[]" disabled="">Електронски допис</label>
+                                <label><input type="checkbox" id="izbor4g18" name="pribavljanjePoSlDuz[]" disabled="" value="Електронски допис">Електронски допис</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor5g18" name="pribavljanjePoSlDuz18[]" disabled="">Редовна пошта</label>
+                                <label><input type="checkbox" id="izbor5g18" name="pribavljanjePoSlDuz[]" disabled="" value="Редовна пошта">Редовна пошта</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor6g18" name="pribavljanjePoSlDuz18[]" disabled="">Други начин</label>
+                                <label><input type="checkbox" id="izbor6g18" name="pribavljanjePoSlDuz[]" disabled="" value="Други начин">Други начин</label>
                             </div>
                             </div>
                             <span class="tooltiptext" id = "tooltiptext1">У овом пољу означити, пре свега, да ли документ прилаже подносилац захтева или га надлежни орган прибавља од других органа / организација, по службеној дужности. Уколико се документ у пракси прибавља по службеној дужности, потребно је означити на који начин надлежни орган прибавља потребни документ (електронски увид, електронски допис, редовна пошта, други начин).</span>
@@ -5529,16 +5530,16 @@
                             </div>
                             <div class="col-lg-11" >
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor3g19" name="pribavljanjePoSlDuz19[]" disabled="">Eлектронски увид</label>
+                                <label><input type="checkbox" id="izbor3g19" name="pribavljanjePoSlDuz[]" disabled="" value="Eлектронски увид">Eлектронски увид</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor4g19" name="pribavljanjePoSlDuz19[]" disabled="">Електронски допис</label>
+                                <label><input type="checkbox" id="izbor4g19" name="pribavljanjePoSlDuz[]" disabled="" value="Електронски допис">Електронски допис</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor5g19" name="pribavljanjePoSlDuz19[]" disabled="">Редовна пошта</label>
+                                <label><input type="checkbox" id="izbor5g19" name="pribavljanjePoSlDuz[]" disabled="" value="Редовна пошта">Редовна пошта</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor6g19" name="pribavljanjePoSlDuz19[]" disabled="">Други начин</label>
+                                <label><input type="checkbox" id="izbor6g19" name="pribavljanjePoSlDuz[]" disabled="" value="Други начин">Други начин</label>
                             </div>
                             </div>
                             <span class="tooltiptext" id = "tooltiptext1">У овом пољу означити, пре свега, да ли документ прилаже подносилац захтева или га надлежни орган прибавља од других органа / организација, по службеној дужности. Уколико се документ у пракси прибавља по службеној дужности, потребно је означити на који начин надлежни орган прибавља потребни документ (електронски увид, електронски допис, редовна пошта, други начин).</span>
@@ -5674,16 +5675,16 @@
                             </div>
                             <div class="col-lg-11" >
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor3g20" name="pribavljanjePoSlDuz20[]" disabled="">Eлектронски увид</label>
+                                <label><input type="checkbox" id="izbor3g20" name="pribavljanjePoSlDuz[]" disabled="" value="Eлектронски увид">Eлектронски увид</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor4g20" name="pribavljanjePoSlDuz20[]" disabled="">Електронски допис</label>
+                                <label><input type="checkbox" id="izbor4g20" name="pribavljanjePoSlDuz[]" disabled="" value="Електронски допис">Електронски допис</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor5g20" name="pribavljanjePoSlDuz20[]" disabled="">Редовна пошта</label>
+                                <label><input type="checkbox" id="izbor5g20" name="pribavljanjePoSlDuz[]" disabled="" value="Редовна пошта">Редовна пошта</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor6g20" name="pribavljanjePoSlDuz20[]" disabled="">Други начин</label>
+                                <label><input type="checkbox" id="izbor6g20" name="pribavljanjePoSlDuz[]" disabled="" value="Други начин">Други начин</label>
                             </div>
                             </div>
                             <span class="tooltiptext" id = "tooltiptext1">У овом пољу означити, пре свега, да ли документ прилаже подносилац захтева или га надлежни орган прибавља од других органа / организација, по службеној дужности. Уколико се документ у пракси прибавља по службеној дужности, потребно је означити на који начин надлежни орган прибавља потребни документ (електронски увид, електронски допис, редовна пошта, други начин).</span>
@@ -5819,16 +5820,16 @@
                             </div>
                             <div class="col-lg-11" >
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor3g21" name="pribavljanjePoSlDuz21[]" disabled="">Eлектронски увид</label>
+                                <label><input type="checkbox" id="izbor3g21" name="pribavljanjePoSlDuz[]" disabled="" value="Eлектронски увид">Eлектронски увид</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor4g21" name="pribavljanjePoSlDuz21[]" disabled="">Електронски допис</label>
+                                <label><input type="checkbox" id="izbor4g21" name="pribavljanjePoSlDuz[]" disabled="" value="Електронски допис">Електронски допис</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor5g21" name="pribavljanjePoSlDuz21[]" disabled="">Редовна пошта</label>
+                                <label><input type="checkbox" id="izbor5g21" name="pribavljanjePoSlDuz[]" disabled="" value="Редовна пошта">Редовна пошта</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor6g21" name="pribavljanjePoSlDuz21[]" disabled="">Други начин</label>
+                                <label><input type="checkbox" id="izbor6g21" name="pribavljanjePoSlDuz[]" disabled="" value="Други начин">Други начин</label>
                             </div>
                             </div>
                             <span class="tooltiptext" id = "tooltiptext1">У овом пољу означити, пре свега, да ли документ прилаже подносилац захтева или га надлежни орган прибавља од других органа / организација, по службеној дужности. Уколико се документ у пракси прибавља по службеној дужности, потребно је означити на који начин надлежни орган прибавља потребни документ (електронски увид, електронски допис, редовна пошта, други начин).</span>
@@ -5964,16 +5965,16 @@
                             </div>
                             <div class="col-lg-11" >
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor3g22" name="pribavljanjePoSlDuz22[]" disabled="">Eлектронски увид</label>
+                                <label><input type="checkbox" id="izbor3g22" name="pribavljanjePoSlDuz[]" disabled="" value="Eлектронски увид">Eлектронски увид</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor4g22" name="pribavljanjePoSlDuz22[]" disabled="">Електронски допис</label>
+                                <label><input type="checkbox" id="izbor4g22" name="pribavljanjePoSlDuz[]" disabled="" value="Електронски допис">Електронски допис</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor5g22" name="pribavljanjePoSlDuz22[]" disabled="">Редовна пошта</label>
+                                <label><input type="checkbox" id="izbor5g22" name="pribavljanjePoSlDuz[]" disabled="" value="Редовна пошта">Редовна пошта</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor6g22" name="pribavljanjePoSlDuz22[]" disabled="">Други начин</label>
+                                <label><input type="checkbox" id="izbor6g22" name="pribavljanjePoSlDuz[]" disabled="" value="Други начин">Други начин</label>
                             </div>
                             </div>
                             <span class="tooltiptext" id = "tooltiptext1">У овом пољу означити, пре свега, да ли документ прилаже подносилац захтева или га надлежни орган прибавља од других органа / организација, по службеној дужности. Уколико се документ у пракси прибавља по службеној дужности, потребно је означити на који начин надлежни орган прибавља потребни документ (електронски увид, електронски допис, редовна пошта, други начин).</span>
@@ -6109,16 +6110,16 @@
                             </div>
                             <div class="col-lg-11" >
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor3g23" name="pribavljanjePoSlDuz23[]" disabled="">Eлектронски увид</label>
+                                <label><input type="checkbox" id="izbor3g23" name="pribavljanjePoSlDuz[]" disabled="" value="Eлектронски увид">Eлектронски увид</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor4g23" name="pribavljanjePoSlDuz23[]" disabled="">Електронски допис</label>
+                                <label><input type="checkbox" id="izbor4g23" name="pribavljanjePoSlDuz[]" disabled="" value="Електронски допис">Електронски допис</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor5g23" name="pribavljanjePoSlDuz23[]" disabled="">Редовна пошта</label>
+                                <label><input type="checkbox" id="izbor5g23" name="pribavljanjePoSlDuz[]" disabled="" value="Редовна пошта">Редовна пошта</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor6g23" name="pribavljanjePoSlDuz23[]" disabled="">Други начин</label>
+                                <label><input type="checkbox" id="izbor6g23" name="pribavljanjePoSlDuz[]" disabled="" value="Други начин">Други начин</label>
                             </div>
                             </div>
                             <span class="tooltiptext" id = "tooltiptext1">У овом пољу означити, пре свега, да ли документ прилаже подносилац захтева или га надлежни орган прибавља од других органа / организација, по службеној дужности. Уколико се документ у пракси прибавља по службеној дужности, потребно је означити на који начин надлежни орган прибавља потребни документ (електронски увид, електронски допис, редовна пошта, други начин).</span>
@@ -6254,16 +6255,16 @@
                             </div>
                             <div class="col-lg-11" >
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor3g24" name="pribavljanjePoSlDuz2425[]" disabled="">Eлектронски увид</label>
+                                <label><input type="checkbox" id="izbor3g24" name="pribavljanjePoSlDuz[]" disabled="" value="Eлектронски увид">Eлектронски увид</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor4g24" name="pribavljanjePoSlDuz2425[]" disabled="">Електронски допис</label>
+                                <label><input type="checkbox" id="izbor4g24" name="pribavljanjePoSlDuz[]" disabled="" value="Електронски допис">Електронски допис</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor5g24" name="pribavljanjePoSlDuz2425[]" disabled="">Редовна пошта</label>
+                                <label><input type="checkbox" id="izbor5g24" name="pribavljanjePoSlDuz[]" disabled="" value="Редовна пошта">Редовна пошта</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor6g24" name="pribavljanjePoSlDuz2425[]" disabled="">Други начин</label>
+                                <label><input type="checkbox" id="izbor6g24" name="pribavljanjePoSlDuz[]" disabled="" value="Други начин">Други начин</label>
                             </div>
                             </div>
                             <span class="tooltiptext" id = "tooltiptext1">У овом пољу означити, пре свега, да ли документ прилаже подносилац захтева или га надлежни орган прибавља од других органа / организација, по службеној дужности. Уколико се документ у пракси прибавља по службеној дужности, потребно је означити на који начин надлежни орган прибавља потребни документ (електронски увид, електронски допис, редовна пошта, други начин).</span>
@@ -6399,16 +6400,16 @@
                             </div>
                             <div class="col-lg-11" >
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor3g25" name="pribavljanjePoSlDuz25[]" disabled="">Eлектронски увид</label>
+                                <label><input type="checkbox" id="izbor3g25" name="pribavljanjePoSlDuz[]" disabled="" value="Eлектронски увид">Eлектронски увид</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor4g25" name="pribavljanjePoSlDuz25[]" disabled="">Електронски допис</label>
+                                <label><input type="checkbox" id="izbor4g25" name="pribavljanjePoSlDuz[]" disabled="" value="Електронски допис">Електронски допис</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor5g25" name="pribavljanjePoSlDuz25[]" disabled="">Редовна пошта</label>
+                                <label><input type="checkbox" id="izbor5g25" name="pribavljanjePoSlDuz[]" disabled="" value="Редовна пошта">Редовна пошта</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor6g25" name="pribavljanjePoSlDuz25[]" disabled="">Други начин</label>
+                                <label><input type="checkbox" id="izbor6g25" name="pribavljanjePoSlDuz[]" disabled="" value="Други начин">Други начин</label>
                             </div>
                             </div>
                             <span class="tooltiptext" id = "tooltiptext1">У овом пољу означити, пре свега, да ли документ прилаже подносилац захтева или га надлежни орган прибавља од других органа / организација, по службеној дужности. Уколико се документ у пракси прибавља по службеној дужности, потребно је означити на који начин надлежни орган прибавља потребни документ (електронски увид, електронски допис, редовна пошта, други начин).</span>
@@ -6544,16 +6545,16 @@
                             </div>
                             <div class="col-lg-11" >
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor3g26" name="pribavljanjePoSlDuz26[]" disabled="">Eлектронски увид</label>
+                                <label><input type="checkbox" id="izbor3g26" name="pribavljanjePoSlDuz[]" disabled="" value="Eлектронски увид">Eлектронски увид</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor4g26" name="pribavljanjePoSlDuz26[]" disabled="">Електронски допис</label>
+                                <label><input type="checkbox" id="izbor4g26" name="pribavljanjePoSlDuz[]" disabled="" value="Електронски допис">Електронски допис</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor5g26" name="pribavljanjePoSlDuz26[]" disabled="">Редовна пошта</label>
+                                <label><input type="checkbox" id="izbor5g26" name="pribavljanjePoSlDuz[]" disabled="" value="Редовна пошта">Редовна пошта</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor6g26" name="pribavljanjePoSlDuz26[]" disabled="">Други начин</label>
+                                <label><input type="checkbox" id="izbor6g26" name="pribavljanjePoSlDuz[]" disabled="" value="Други начин">Други начин</label>
                             </div>
                             </div>
                             <span class="tooltiptext" id = "tooltiptext1">У овом пољу означити, пре свега, да ли документ прилаже подносилац захтева или га надлежни орган прибавља од других органа / организација, по службеној дужности. Уколико се документ у пракси прибавља по службеној дужности, потребно је означити на који начин надлежни орган прибавља потребни документ (електронски увид, електронски допис, редовна пошта, други начин).</span>
@@ -6689,16 +6690,16 @@
                             </div>
                             <div class="col-lg-11" >
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor3g27" name="pribavljanjePoSlDuz27[]" disabled="">Eлектронски увид</label>
+                                <label><input type="checkbox" id="izbor3g27" name="pribavljanjePoSlDuz[]" disabled="" value="Eлектронски увид">Eлектронски увид</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor4g27" name="pribavljanjePoSlDuz27[]" disabled="">Електронски допис</label>
+                                <label><input type="checkbox" id="izbor4g27" name="pribavljanjePoSlDuz[]" disabled="" value="Електронски допис">Електронски допис</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor5g27" name="pribavljanjePoSlDuz27[]" disabled="">Редовна пошта</label>
+                                <label><input type="checkbox" id="izbor5g27" name="pribavljanjePoSlDuz[]" disabled="" value="Редовна пошта">Редовна пошта</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor6g27" name="pribavljanjePoSlDuz27[]" disabled="">Други начин</label>
+                                <label><input type="checkbox" id="izbor6g27" name="pribavljanjePoSlDuz[]" disabled="" value="Други начин">Други начин</label>
                             </div>
                             </div>
                             <span class="tooltiptext" id = "tooltiptext1">У овом пољу означити, пре свега, да ли документ прилаже подносилац захтева или га надлежни орган прибавља од других органа / организација, по службеној дужности. Уколико се документ у пракси прибавља по службеној дужности, потребно је означити на који начин надлежни орган прибавља потребни документ (електронски увид, електронски допис, редовна пошта, други начин).</span>
@@ -6833,16 +6834,16 @@
                             </div>
                             <div class="col-lg-11" >
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor3g28" name="pribavljanjePoSlDuz28[]" disabled="">Eлектронски увид</label>
+                                <label><input type="checkbox" id="izbor3g28" name="pribavljanjePoSlDuz[]" disabled="" value="Eлектронски увид">Eлектронски увид</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor4g28" name="pribavljanjePoSlDuz28[]" disabled="">Електронски допис</label>
+                                <label><input type="checkbox" id="izbor4g28" name="pribavljanjePoSlDuz[]" disabled="" value="Електронски допис">Електронски допис</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor5g28" name="pribavljanjePoSlDuz28[]" disabled="">Редовна пошта</label>
+                                <label><input type="checkbox" id="izbor5g28" name="pribavljanjePoSlDuz[]" disabled="" value="Редовна пошта">Редовна пошта</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor6g28" name="pribavljanjePoSlDuz28[]" disabled="">Други начин</label>
+                                <label><input type="checkbox" id="izbor6g28" name="pribavljanjePoSlDuz[]" disabled="" value="Други начин">Други начин</label>
                             </div>
                             </div>
                             <span class="tooltiptext" id = "tooltiptext1">У овом пољу означити, пре свега, да ли документ прилаже подносилац захтева или га надлежни орган прибавља од других органа / организација, по службеној дужности. Уколико се документ у пракси прибавља по службеној дужности, потребно је означити на који начин надлежни орган прибавља потребни документ (електронски увид, електронски допис, редовна пошта, други начин).</span>
@@ -6978,16 +6979,16 @@
                             </div>
                             <div class="col-lg-11" >
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor3g29" name="pribavljanjePoSlDuz29[]" disabled="">Eлектронски увид</label>
+                                <label><input type="checkbox" id="izbor3g29" name="pribavljanjePoSlDuz[]" disabled="" value="Eлектронски увид">Eлектронски увид</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor4g29" name="pribavljanjePoSlDuz29[]" disabled="">Електронски допис</label>
+                                <label><input type="checkbox" id="izbor4g29" name="pribavljanjePoSlDuz[]" disabled="" value="Електронски допис">Електронски допис</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor5g29" name="pribavljanjePoSlDuz29[]" disabled="">Редовна пошта</label>
+                                <label><input type="checkbox" id="izbor5g29" name="pribavljanjePoSlDuz[]" disabled="" value="Редовна пошта">Редовна пошта</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor6g29" name="pribavljanjePoSlDuz29[]" disabled="">Други начин</label>
+                                <label><input type="checkbox" id="izbor6g29" name="pribavljanjePoSlDuz[]" disabled="" value="Други начин">Други начин</label>
                             </div>
                             </div>
                             <span class="tooltiptext" id = "tooltiptext1">У овом пољу означити, пре свега, да ли документ прилаже подносилац захтева или га надлежни орган прибавља од других органа / организација, по службеној дужности. Уколико се документ у пракси прибавља по службеној дужности, потребно је означити на који начин надлежни орган прибавља потребни документ (електронски увид, електронски допис, редовна пошта, други начин).</span>
@@ -7123,16 +7124,16 @@
                             </div>
                             <div class="col-lg-11" >
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor3g30" name="pribavljanjePoSlDuz30[]" disabled="">Eлектронски увид</label>
+                                <label><input type="checkbox" id="izbor3g30" name="pribavljanjePoSlDuz[]" disabled="" value="Eлектронски увид">Eлектронски увид</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor4g30" name="pribavljanjePoSlDuz30[]" disabled="">Електронски допис</label>
+                                <label><input type="checkbox" id="izbor4g30" name="pribavljanjePoSlDuz[]" disabled="" value="Електронски допис">Електронски допис</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor5g30" name="pribavljanjePoSlDuz30[]" disabled="">Редовна пошта</label>
+                                <label><input type="checkbox" id="izbor5g30" name="pribavljanjePoSlDuz[]" disabled="" value="Редовна пошта">Редовна пошта</label>
                             </div>
                             <div class="checkbox">
-                                <label><input type="checkbox" id="izbor6g30" name="pribavljanjePoSlDuz30[]" disabled="">Други начин</label>
+                                <label><input type="checkbox" id="izbor6g30" name="pribavljanjePoSlDuz[]" disabled="" value="Други начин">Други начин</label>
                             </div>
                             </div>
                             <span class="tooltiptext" id = "tooltiptext1">У овом пољу означити, пре свега, да ли документ прилаже подносилац захтева или га надлежни орган прибавља од других органа / организација, по службеној дужности. Уколико се документ у пракси прибавља по службеној дужности, потребно је означити на који начин надлежни орган прибавља потребни документ (електронски увид, електронски допис, редовна пошта, други начин).</span>
