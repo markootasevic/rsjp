@@ -24,3 +24,7 @@ Route::post('/postFormular','FormularController@postFormular');
 Route::get('/', function(){
 	return view('Forma_Procedure');
 });
+
+Route::get('/trifke' ,function() {
+	return view('prikaz/prikaz4');
+});
