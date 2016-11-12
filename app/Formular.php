@@ -21,7 +21,7 @@ class Formular extends Model
 
     public function potrebneDokumentacije()
     {
-        return $this->hasMany('PotrebnaDokumentacija','sifraPostupka','sifraPostupka');
+        return $this->hasMany('App\PotrebnaDokumentacija','sifraPostupka','sifraPostupka');
     }
 
     public function finansijskiIzdaci()
