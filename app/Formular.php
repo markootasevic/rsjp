@@ -3,11 +3,21 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use App\Propisi;
 
 class Formular extends Model
 {
+    public $timestamps = false;
+
     protected $table = 'formular';
     protected $primaryKey = "sifraPostupka";
+
+    protected $fillable = [
+        'napomene',
+        'datumPopunjavanjaPostupka',
+        'nazivPostupka',
+    
+    ];
 
     public function potrebneDokumentacije()
     {
@@ -21,7 +31,7 @@ class Formular extends Model
 
     public function propisi()
     {
-        return $this->hasMany('Propisi','sifraPostupka','sifraPostupka');
+        return $this->hasMany('App\Propisi','sifraPostupka','sifraPostupka');
     }
 
     public function svrhePostupka()

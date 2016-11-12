@@ -34,8 +34,6 @@
                   
                   <form method="post" action="{{url('/postFormular')}}">
                       
-                      <input type="text" name="Otas">
-                      
 
                       {!! csrf_field() !!}
                   
@@ -55,7 +53,7 @@
                         <div class="col-lg-12" id = "tooltip1">
                             <br></br>
                              <h5><span class="labelNazivi">Назив административног поступка</span></h5>
-                            <textarea data-autoresize required="" name="nazivPostupka"></textarea>
+                            <textarea data-autoresize  name="nazivPostupka"></textarea>
                             <span class="tooltiptext" id = "tooltiptext1">У ово поље се уноси назив административног поступка, на начин како је унет у претходно припремљеној листи административних поступака. Смернице о именовању административних поступака погледати у одељку 4.4.3 Инструкције за спровођење пописа административних поступака.</span>
 
                         </br>
@@ -74,7 +72,7 @@
 
                         <div class="col-lg-6" id = "tooltip2">
                              <h5><span class="labelNazivi">Датум попуњавања формулара</span></h5>
-                             <input type="text" id="datepicker1" class='form-control' name='datumPopunjavanjaPostupka' disabled="">
+                             <input type="text" id="datepicker1" class='form-control' value="{{ date('d/m/Y') }}" name='datumPopunjavanjaPostupka' value='' disabled="">
                              <span class="tooltiptext" id = "tooltiptext1">Ово поље није потребно попуњавати. Поље се аутоматски генерише.</span>
 
                          </br>
@@ -107,7 +105,7 @@
                 		
                 		<div class="col-lg-11" id = "tooltip1">
                             <span class="labelNazivi">Надлежни орган/организација за спровођење административног поступка</span>
-                            <br></br><select class="form-control" id="danijel" name="nadlezniOrgan" required="">
+                            <br></br><select class="form-control" id="danijel" name="nadlezniOrgan" >
                             <option value="" disabled selected hidden>Изаберите</option>
                                 <option value="Министарство државне управе и локалне самоуправе">Министарство државне управе и локалне самоуправе</option>
                                  <option value="Министарство финансија">Министарство финансија</option>
@@ -292,7 +290,7 @@
                 		
                 		<div class="col-lg-11" id = "tooltip1">
                             <span class="labelNazivi">Организациона јединица у чијој је надлежности административни поступак</span>
-                            <br></br><textarea data-autoresize required="" name="organizacionaJedinica"></textarea></br>
+                            <br></br><textarea data-autoresize  name="organizacionaJedinica"></textarea></br>
                             <span class="tooltiptext" id = "tooltiptext1">У ово поље се уноси назив организационе јединице у оквиру органа/организације(сектор, одељење, одсек и сл.), надлежне за решавање по захтеву у оквиру административног поступка. Потребно је унети назив и више и ниже (шире и уже) организационе јединице (Нпр. Назив одељења, Назив одсека у оквиру одељења).</span>
 
 
@@ -313,7 +311,7 @@
                 				</div>
                 				<div class="col-lg-11" id = "tooltip1">
                 					 <span class="labelNazivi">Име и презиме</span>
-                                     <br><br> <input type="text" class='form-control' name='imePrezime' id="a41" required></br>
+                                     <br><br> <input type="text" class='form-control' name='imePrezime' id="a41" ></br>
                                         <span class="tooltiptext" id = "tooltiptext1">Лице, које попуњава формулар, уноси податке о свом имену и презимену, позицији/ радном месту, телефону и електронској пошти. Имејл адресу унети у латиничном писму.</span>
 
                 				</div>
@@ -325,7 +323,7 @@
                 				</div>
                 				<div class="col-lg-11" id = "tooltip1">
                                     <span class="labelNazivi">Позиција/радно место</span>
-                                    <br><br> <input type="text" class='form-control' name='radnoMesto' id="a42" required></br>
+                                    <br><br> <input type="text" class='form-control' name='radnoMesto' id="a42" ></br>
 
                 				</div>
                 			</div>
@@ -336,7 +334,7 @@
                 				</div>
                 				<div class="col-lg-11" id = "tooltip1">
                                     <span class="labelNazivi">Телефон</span>
-                                    <br><br> <input type="number" class='form-control' name='telefon' required placeholder="+381 11 XX XX XXX"></br>
+                                    <br><br> <input type="number" class='form-control' name='telefon'  placeholder="+381 11 XX XX XXX"></br>
 
                 				</div>
                 			</div>
@@ -347,7 +345,7 @@
                 				</div>
                 				<div class="col-lg-11" id = "tooltip1">
                                     <span class="labelNazivi">Електронска пошта</span>
-                                    <br><br><input type="text" id="e-mail" class='form-control' name='a44ElPosta' required></br>
+                                    <br><br><input type="text" id="e-mail" class='form-control' name='a44ElPosta' ></br>
 
                 				</div>
                 			
@@ -783,14 +781,14 @@
                 <div class="col-lg-1">
                 </div>
                 <div class="col-lg-5" id = "tooltip4">
-                <input type="number" min="0" class='form-control' name='podneti2014' required>
+                <input type="number" min="0" class='form-control' name='podneti2014' >
                 <span class="tooltiptext1" id = "tooltiptext1">Навести број захтева, које су привредна друштва, предузетници и други привредни субјекти поднели надлежном органу / организацији у 2014. и 2015. години. Овај податак не обухвата број захтева, поднетих од стране грађана, уколико је у питању мешовит поступак. </span>
 
                 </div>
                     <div class="col-lg-1">
                     </div>                    
                     <div class="col-lg-5" id = "tooltip4">                        
-                    <input type="number" min="0" class='form-control' name='podneti2015' required>
+                    <input type="number" min="0" class='form-control' name='podneti2015' >
                     <span class="tooltiptext1" id = "tooltiptext1">Навести број захтева, које су привредна друштва, предузетници и други привредни субјекти поднели надлежном органу / организацији у 2014. и 2015. години. Овај податак не обухвата број захтева, поднетих од стране грађана, уколико је у питању мешовит поступак. </span>
 
                     </div>
@@ -824,7 +822,7 @@
                 </div>
                 <div class="col-lg-5" id = "tooltip4">
                 <span class="labelNazivi">Позитивно решени</span>
-                <input type="number" style="height: 40px" min="0" class='form-control' name='pozitivni2014' required>
+                <input type="number" style="height: 40px" min="0" class='form-control' name='pozitivni2014' >
                 <span class="tooltiptext" id = "tooltiptext1">Потребно је унети број издатих аката привредним друштвима, предузетницима и другим привредним субјектима у оквиру овог АП у 2014. и 2015. години, и то посебно број:
    Позитивно решених аката;
    Негативно решених аката.
@@ -835,7 +833,7 @@
                     </div>                    
                     <div class="col-lg-5" id = "tooltip4">
                     <span class="labelNazivi">Позитивно решени</span>                        
-                    <input type="number" style="height: 40px" min="0" class='form-control' name='pozitivni2015' required>
+                    <input type="number" style="height: 40px" min="0" class='form-control' name='pozitivni2015' >
                     <span class="tooltiptext" id = "tooltiptext1">Потребно је унети број издатих аката привредним друштвима, предузетницима и другим привредним субјектима у оквиру овог АП у 2014. и 2015. години, и то посебно број:
    Позитивно решених аката;
    Негативно решених аката.
@@ -849,14 +847,14 @@
                 </div>
                 <div class="col-lg-5" >
                 <span class="labelNazivi">Негативно решени</span>
-                <input type="number" style="height: 40px" min="0" class='form-control' name='negativni2014' required>
+                <input type="number" style="height: 40px" min="0" class='form-control' name='negativni2014' >
 
                 </div>
                     <div class="col-lg-1">
                     </div>                    
                     <div class="col-lg-5">
                     <span class="labelNazivi">Негативно решени</span>                       
-                    <input type="number" style="height: 40px" min="0" class='form-control' name='negativni2015' required>
+                    <input type="number" style="height: 40px" min="0" class='form-control' name='negativni2015' >
 
                     </div>
                         </div>
@@ -952,7 +950,7 @@
                                     foreach($parsiran_json->acts as $vrednost){
                                     ?>
 
-                                    <?php echo "<option value=\"owner1\">" .$vrednost->title . "</option>";
+                                    <?php echo '<option value="'.$vrednost->title. '">' .$vrednost->title . "</option>";
 
 
                                      ;?>
@@ -1017,7 +1015,7 @@
                             </div>
                                 <div class="col-lg-11" id = "tooltip1">
                                     <span class="labelNazivi">Члан/ови у пропису: </span>
-                                    <br></br><input type="text" id="b41" class='form-control' name="clanoviPropisa" required>
+                                    <br></br><input type="text" id="b41" class='form-control' name="clanoviPropisa" >
                                     <span class="tooltiptext" id = "tooltiptext1">Уносе се члан/ови закона, подзаконског или другог акта, који уређују административни поступак.</span>
 
                                 </div>
@@ -1083,7 +1081,7 @@
                                     foreach($parsiran_json->acts as $vrednost){
                                     ?>
 
-                                    <?php echo "<option value=\"owner1\">" .$vrednost->title . "</option>";
+                                    <?php echo '<option value="'.$vrednost->title. '">' .$vrednost->title . "</option>";
 
 
                                      ;?>
@@ -1148,7 +1146,7 @@
                             </div>
                                 <div class="col-lg-11" id = "tooltip1">
                                     <span class="labelNazivi">Члан/ови у пропису: </span>
-                                    <br></br><input type="text" id="b42" class='form-control' name="clanoviPropisa1" required>
+                                    <br></br><input type="text" id="b42" class='form-control' name="clanoviPropisa1" >
                                     <span class="tooltiptext" id = "tooltiptext1">Уносе се члан/ови закона, подзаконског или другог акта, који уређују административни поступак.</span>
                                 </div>
                                 </div>
@@ -1215,7 +1213,7 @@
                                     foreach($parsiran_json->acts as $vrednost){
                                     ?>
 
-                                    <?php echo "<option value=\"owner1\">" .$vrednost->title . "</option>";
+                                    <?php echo '<option value="'.$vrednost->title. '">' .$vrednost->title . "</option>";
 
 
                                      ;?>
@@ -1276,7 +1274,7 @@
                             </div>
                                 <div class="col-lg-11" id = "tooltip1">
                                     <span class="labelNazivi">Члан/ови у пропису: </span>
-                                    <br></br><input type="text" id="b43" class='form-control' name="clanoviPropisa2" required>
+                                    <br></br><input type="text" id="b43" class='form-control' name="clanoviPropisa2" >
                                     <span class="tooltiptext" id = "tooltiptext1">Уносе се члан/ови закона, подзаконског или другог акта, који уређују административни поступак.</span>
                                 </div>
                                 </div>
@@ -1341,7 +1339,7 @@
                                     foreach($parsiran_json->acts as $vrednost){
                                     ?>
 
-                                    <?php echo "<option value=\"owner1\">" .$vrednost->title . "</option>";
+                                    <?php echo '<option value="'.$vrednost->title. '">' .$vrednost->title . "</option>";
 
 
                                      ;?>
@@ -1405,7 +1403,7 @@
                             </div>
                                 <div class="col-lg-11" id = "tooltip1">
                                     <span class="labelNazivi">Члан/ови у пропису: </span>
-                                    <br></br><input type="text" id="b44" class='form-control' name="clanoviPropisa3" required>
+                                    <br></br><input type="text" id="b44" class='form-control' name="clanoviPropisa3" >
                                     <span class="tooltiptext" id = "tooltiptext1">Уносе се члан/ови закона, подзаконског или другог акта, који уређују административни поступак.</span>
                                 </div>
                                 </div>
@@ -1471,7 +1469,7 @@
                                     foreach($parsiran_json->acts as $vrednost){
                                     ?>
 
-                                    <?php echo "<option value=\"owner1\">" .$vrednost->title . "</option>";
+                                    <?php echo '<option value="'.$vrednost->title. '">' .$vrednost->title . "</option>";
 
 
                                      ;?>
@@ -1533,7 +1531,7 @@
                             </div>
                                 <div class="col-lg-11" id = "tooltip1">
                                     <span class="labelNazivi">Члан/ови у пропису: </span>
-                                    <br></br><input type="text" id="b45" class='form-control' name="clanoviPropisa4" required>
+                                    <br></br><input type="text" id="b45" class='form-control' name="clanoviPropisa4" >
                                     <span class="tooltiptext" id = "tooltiptext1">Уносе се члан/ови закона, подзаконског или другог акта, који уређују административни поступак.</span>
                                 </div>
                                 </div>
@@ -1599,7 +1597,7 @@
                                     foreach($parsiran_json->acts as $vrednost){
                                     ?>
 
-                                    <?php echo "<option value=\"owner1\">" .$vrednost->title . "</option>";
+                                    <?php echo '<option value="'.$vrednost->title. '">' .$vrednost->title . "</option>";
 
 
                                      ;?>
@@ -1659,7 +1657,7 @@
                             </div>
                                 <div class="col-lg-11" id = "tooltip1">
                                     <span class="labelNazivi">Члан/ови у пропису: </span>
-                                    <br></br><input type="text" id="b46" class='form-control' name="clanoviPropisa5" required>
+                                    <br></br><input type="text" id="b46" class='form-control' name="clanoviPropisa5" >
                                     <span class="tooltiptext" id = "tooltiptext1">Уносе се члан/ови закона, подзаконског или другог акта, који уређују административни поступак.</span>
                                 </div>
                                 </div>
@@ -1724,7 +1722,7 @@
                                     foreach($parsiran_json->acts as $vrednost){
                                     ?>
 
-                                    <?php echo "<option value=\"owner1\">" .$vrednost->title . "</option>";
+                                    <?php echo '<option value="'.$vrednost->title. '">' .$vrednost->title . "</option>";
 
 
                                      ;?>
@@ -1787,7 +1785,7 @@
                             </div>
                                 <div class="col-lg-11" id = "tooltip1">
                                     <span class="labelNazivi">Члан/ови у пропису: </span>
-                                    <br></br><input type="text" id="b47" class='form-control' name="clanoviPropisa6" required>
+                                    <br></br><input type="text" id="b47" class='form-control' name="clanoviPropisa6" >
                                     <span class="tooltiptext" id = "tooltiptext1">Уносе се члан/ови закона, подзаконског или другог акта, који уређују административни поступак.</span>
                                 </div>
                                 </div>
@@ -1851,7 +1849,7 @@
                                     foreach($parsiran_json->acts as $vrednost){
                                     ?>
 
-                                    <?php echo "<option value=\"owner1\">" .$vrednost->title . "</option>";
+                                    <?php echo '<option value="'.$vrednost->title. '">' .$vrednost->title . "</option>";
 
 
                                      ;?>
@@ -1913,7 +1911,7 @@
                             </div>
                                 <div class="col-lg-11" id = "tooltip1">
                                     <span class="labelNazivi">Члан/ови у пропису: </span>
-                                    <br></br><input type="text" id="b48" class='form-control' name="clanoviPropisa7" required>
+                                    <br></br><input type="text" id="b48" class='form-control' name="clanoviPropisa7" >
                                     <span class="tooltiptext" id = "tooltiptext1">Уносе се члан/ови закона, подзаконског или другог акта, који уређују административни поступак.</span>
                                 </div>
                                 </div>
@@ -1980,7 +1978,7 @@
                                     foreach($parsiran_json->acts as $vrednost){
                                     ?>
 
-                                    <?php echo "<option value=\"owner1\">" .$vrednost->title . "</option>";
+                                    <?php echo '<option value="'.$vrednost->title. '">' .$vrednost->title . "</option>";
 
 
                                      ;?>
@@ -2042,7 +2040,7 @@
                             </div>
                                 <div class="col-lg-11" id = "tooltip1">
                                     <span class="labelNazivi">Члан/ови у пропису: </span>
-                                    <br></br><input type="text" id="b49" class='form-control' name="clanoviPropisa8" required>
+                                    <br></br><input type="text" id="b49" class='form-control' name="clanoviPropisa8" >
                                     <span class="tooltiptext" id = "tooltiptext1">Уносе се члан/ови закона, подзаконског или другог акта, који уређују административни поступак.</span>
                                 </div>
                                 </div>
@@ -2108,7 +2106,7 @@
                                     foreach($parsiran_json->acts as $vrednost){
                                     ?>
 
-                                    <?php echo "<option value=\"owner1\">" .$vrednost->title . "</option>";
+                                    <?php echo '<option value="'.$vrednost->title. '">' .$vrednost->title . "</option>";
 
 
                                      ;?>
@@ -2170,7 +2168,7 @@
                             </div>
                                 <div class="col-lg-11" id = "tooltip1">
                                     <span class="labelNazivi">Члан/ови у пропису: </span>
-                                    <br></br><input type="text" id="b410" class='form-control' name="clanoviPropisa9" required>
+                                    <br></br><input type="text" id="b410" class='form-control' name="clanoviPropisa9" >
                                     <span class="tooltiptext" id = "tooltiptext1">Уносе се члан/ови закона, подзаконског или другог акта, који уређују административни поступак.</span>
                                 </div>
                                 </div>
@@ -7221,7 +7219,7 @@
                                     foreach($parsiran_json->acts as $vrednost){
                                     ?>
 
-                                    <?php echo "<option value=\"owner1\">" .$vrednost->title . "</option>";
+                                    <?php echo '<option value="'.$vrednost->title. '">' .$vrednost->title . "</option>";
 
 
                                      ;?>
@@ -7284,7 +7282,7 @@
                     </div>
                             <div class="col-lg-11" id = "tooltip1">
                             <span class="labelNazivi">Члан/ови прописа којим/а се утврђује издатак</span>
-                                <br></br><input type="text" id="d51" class='form-control' name="clanPropisIzdatak1" required></br>
+                                <br></br><input type="text" id="d51" class='form-control' name="clanPropisIzdatak1" ></br>
                                 <span class="tooltiptext" id = "tooltiptext1">Уноси/е се члан/ови прописа, којим/а се дефинише овај финансијски издатак. </span>
 
                             </div>
@@ -7296,7 +7294,7 @@
                     </div>
                             <div class="col-lg-11" id = "tooltip1">
                             <span class="labelNazivi">Тарифни број/еви</span>
-                                <br></br><input type="text" id="d61" class='form-control' name="tarifniBroj1" required></br>
+                                <br></br><input type="text" id="d61" class='form-control' name="tarifniBroj1" ></br>
                                  <span class="tooltiptext" id = "tooltiptext1">Уноси се сви тарифни бројеви, ако постоје.</span>
 
 
@@ -7348,7 +7346,7 @@
                     </div>
                             <div class="col-lg-11" id = "tooltip1">
                             <span class="labelNazivi">Број рачуна за уплату</span> <!-- Tri polja za racun -->
-                                <br></br><input type="text" id="d101" class='form-control' name="brojRacuna1" required></br>
+                                <br></br><input type="text" id="d101" class='form-control' name="brojRacuna1" ></br>
                             <span class="tooltiptext" id = "tooltiptext1">У ово поље се уноси број рачуна за уплату, који је потребно унети у уплатницу.</span>
 
 
@@ -7361,7 +7359,7 @@
                     </div>
                             <div class="col-lg-11" id = "tooltip1">
                             <span class="labelNazivi">Позив на број</span> <!-- Dva polja -->
-                                <br></br><input type="text" id="d111" class='form-control' name="pozivNaBroj1" required></br>
+                                <br></br><input type="text" id="d111" class='form-control' name="pozivNaBroj1" ></br>
                                 <span class="tooltiptext" id = "tooltiptext1">У ово поље се уноси позив на број (уколико постоји), који је потребно унети у уплатницу.</span>
 
 
@@ -7446,7 +7444,7 @@
                                     foreach($parsiran_json->acts as $vrednost){
                                     ?>
 
-                                    <?php echo "<option value=\"owner1\">" .$vrednost->title . "</option>";
+                                    <?php echo '<option value="'.$vrednost->title. '">' .$vrednost->title . "</option>";
 
 
                                      ;?>
@@ -7473,7 +7471,7 @@
 
                         <div class="col-lg-11" id = "tooltip1">
                         <span class="labelNazivi">Уколико пропис није објављен у службеном гласилу, навести назив прописа и приложити пропис</span>
-                        <br></br><input type="text" id="d52" class='form-control' name="clanPropisIzdatak2" required></br>
+                        <br></br><input type="text" id="d52" class='form-control' name="clanPropisIzdatak2" ></br>
                         <br>
                                          
     <div class="row">    
@@ -7509,7 +7507,7 @@
                     </div>
                             <div class="col-lg-11">
                             <span class="labelNazivi">Члан/ови прописа којим/а се утврђује издатак</span>
-                                <br></br><input type="text" class='form-control' name="clanPropisIzdatak2" required></br>
+                                <br></br><input type="text" class='form-control' name="clanPropisIzdatak2" ></br>
 
                             </div>
                             </div>
@@ -7522,7 +7520,7 @@
                     </div>
                             <div class="col-lg-11" id = "tooltip1">
                             <span class="labelNazivi">Тарифни број/еви</span>
-                                <br></br><input type="text" id="d62" class='form-control' name="tarifniBroj2" required></br>
+                                <br></br><input type="text" id="d62" class='form-control' name="tarifniBroj2" ></br>
                                 <span class="tooltiptext" id = "tooltiptext1">Уноси се сви тарифни бројеви, ако постоје.</span>
 
 
@@ -7573,7 +7571,7 @@
                     </div>
                             <div class="col-lg-11" id = "tooltip1">
                             <span class="labelNazivi">Број рачуна за уплату</span> <!-- Tri polja za racun -->
-                                <br></br><input type="text" id="d102" class='form-control' name="brojRacuna2" required></br>
+                                <br></br><input type="text" id="d102" class='form-control' name="brojRacuna2" ></br>
                                  <span class="tooltiptext" id = "tooltiptext1">У ово поље се уноси број рачуна за уплату, који је потребно унети у уплатницу.</span>
 
 
@@ -7586,7 +7584,7 @@
                     </div>
                             <div class="col-lg-11" id = "tooltip1">
                             <span class="labelNazivi">Позив на број</span> <!-- Dva polja -->
-                                <br></br><input type="text" id="d112" class='form-control' name="pozivNaBroj2" required></br>
+                                <br></br><input type="text" id="d112" class='form-control' name="pozivNaBroj2" ></br>
                                 <span class="tooltiptext" id = "tooltiptext1">У ово поље се уноси позив на број (уколико постоји), који је потребно унети у уплатницу.</span>
 
                             </div>
@@ -7676,7 +7674,7 @@
                                     foreach($parsiran_json->acts as $vrednost){
                                     ?>
 
-                                    <?php echo "<option value=\"owner1\">" .$vrednost->title . "</option>";
+                                    <?php echo '<option value="'.$vrednost->title. '">' .$vrednost->title . "</option>";
 
 
                                      ;?>
@@ -7702,7 +7700,7 @@
 
                         <div class="col-lg-11" id = "tooltip1">
                         <span class="labelNazivi">Уколико пропис није објављен у службеном гласилу, навести назив прописа и приложити пропис</span>
-                        <br></br><input type="text" id="d53" class='form-control' name="clanPropisIzdatak3" required></br>
+                        <br></br><input type="text" id="d53" class='form-control' name="clanPropisIzdatak3" ></br>
                         <br>
                                           
     <div class="row">    
@@ -7738,7 +7736,7 @@
                     </div>
                             <div class="col-lg-11">
                             <span class="labelNazivi">Члан/ови прописа којим/а се утврђује издатак</span>
-                                <br></br><input type="text" class='form-control' name="clanPropisIzdatak3" required></br>
+                                <br></br><input type="text" class='form-control' name="clanPropisIzdatak3" ></br>
 
                             </div>
                             </div>
@@ -7751,7 +7749,7 @@
                     </div>
                             <div class="col-lg-11" id = "tooltip1">
                             <span class="labelNazivi">Тарифни број/еви</span>
-                                <br></br><input type="text" id="d63" class='form-control' name="tarifniBroj3" required></br>
+                                <br></br><input type="text" id="d63" class='form-control' name="tarifniBroj3" ></br>
                                 <span class="tooltiptext" id = "tooltiptext1">Уноси се сви тарифни бројеви, ако постоје.</span>
 
                             </div>
@@ -7799,7 +7797,7 @@
                     </div>
                             <div class="col-lg-11" id = "tooltip1">
                             <span class="labelNazivi">Број рачуна за уплату</span> <!-- Tri polja za racun -->
-                                <br></br><input type="text" id="d103" class='form-control' name="brojRacuna3" required></br>
+                                <br></br><input type="text" id="d103" class='form-control' name="brojRacuna3" ></br>
                                 <span class="tooltiptext" id = "tooltiptext1">У ово поље се уноси број рачуна за уплату, који је потребно унети у уплатницу.</span>
 
                             </div>
@@ -7811,7 +7809,7 @@
                     </div>
                             <div class="col-lg-11" id = "tooltip1">
                             <span class="labelNazivi">Позив на број</span> <!-- Dva polja -->
-                                <br></br><input type="text" id="d113" class='form-control' name="pozivNaBroj3" required></br>
+                                <br></br><input type="text" id="d113" class='form-control' name="pozivNaBroj3" ></br>
                                 <span class="tooltiptext" id = "tooltiptext1">У ово поље се уноси позив на број (уколико постоји), који је потребно унети у уплатницу.</span>
 
                             </div>
@@ -7900,7 +7898,7 @@
                                     foreach($parsiran_json->acts as $vrednost){
                                     ?>
 
-                                    <?php echo "<option value=\"owner1\">" .$vrednost->title . "</option>";
+                                    <?php echo '<option value="'.$vrednost->title. '">' .$vrednost->title . "</option>";
 
 
                                      ;?>
@@ -7927,7 +7925,7 @@
 
                         <div class="col-lg-11" id = "tooltip1">
                         <span class="labelNazivi">Уколико пропис није објављен у службеном гласилу, навести назив прописа и приложити пропис</span>
-                        <br></br><input type="text" id="d54" class='form-control' name="clanPropisIzdatak4" required></br>
+                        <br></br><input type="text" id="d54" class='form-control' name="clanPropisIzdatak4" ></br>
                         <br>
                                          
     <div class="row">    
@@ -7963,7 +7961,7 @@
                     </div>
                             <div class="col-lg-11">
                             <span class="labelNazivi">Члан/ови прописа којим/а се утврђује издатак</span>
-                                <br></br><input type="text" class='form-control' name="clanPropisIzdatak4" required></br>
+                                <br></br><input type="text" class='form-control' name="clanPropisIzdatak4" ></br>
 
                             </div>
                             </div>
@@ -7976,7 +7974,7 @@
                     </div>
                             <div class="col-lg-11" id = "tooltip1">
                             <span class="labelNazivi">Тарифни број/еви</span>
-                                <br></br><input type="text" id="d64" class='form-control' name="tarifniBroj4" required></br>
+                                <br></br><input type="text" id="d64" class='form-control' name="tarifniBroj4" ></br>
                                 <span class="tooltiptext" id = "tooltiptext1">Уноси се сви тарифни бројеви, ако постоје.</span>
 
                             </div>
@@ -8024,7 +8022,7 @@
                     </div>
                             <div class="col-lg-11" id = "tooltip1">
                             <span class="labelNazivi">Број рачуна за уплату</span> <!-- Tri polja za racun -->
-                                <br></br><input type="text" id="d104" class='form-control' name="brojRacuna4" required></br>
+                                <br></br><input type="text" id="d104" class='form-control' name="brojRacuna4" ></br>
                                 <span class="tooltiptext" id = "tooltiptext1">У ово поље се уноси број рачуна за уплату, који је потребно унети у уплатницу.</span>
 
                             </div>
@@ -8036,7 +8034,7 @@
                     </div>
                             <div class="col-lg-11" id = "tooltip1">
                             <span class="labelNazivi">Позив на број</span> <!-- Dva polja -->
-                                <br></br><input type="text" id="d114" class='form-control' name="pozivNaBroj4" required></br>
+                                <br></br><input type="text" id="d114" class='form-control' name="pozivNaBroj4" ></br>
                                 <span class="tooltiptext" id = "tooltiptext1">У ово поље се уноси позив на број (уколико постоји), који је потребно унети у уплатницу.</span>
 
                             </div>
@@ -8127,7 +8125,7 @@
                                     foreach($parsiran_json->acts as $vrednost){
                                     ?>
 
-                                    <?php echo "<option value=\"owner1\">" .$vrednost->title . "</option>";
+                                    <?php echo '<option value="'.$vrednost->title. '">' .$vrednost->title . "</option>";
 
 
                                      ;?>
@@ -8153,7 +8151,7 @@
 
                         <div class="col-lg-11" id = "tooltip1">
                         <span class="labelNazivi">Уколико пропис није објављен у службеном гласилу, навести назив прописа и приложити пропис</span>
-                        <br></br><input type="text" id="d55" class='form-control' name="clanPropisIzdatak5" required></br>
+                        <br></br><input type="text" id="d55" class='form-control' name="clanPropisIzdatak5" ></br>
                         <br>
                                           
     <div class="row">    
@@ -8189,7 +8187,7 @@
                     </div>
                             <div class="col-lg-11">
                             <span class="labelNazivi">Члан/ови прописа којим/а се утврђује издатак</span>
-                                <br></br><input type="text" class='form-control' name="clanPropisIzdatak5" required></br>
+                                <br></br><input type="text" class='form-control' name="clanPropisIzdatak5" ></br>
 
                             </div>
                             </div>
@@ -8202,7 +8200,7 @@
                     </div>
                             <div class="col-lg-11" id = "tooltip1">
                             <span class="labelNazivi">Тарифни број/еви</span>
-                                <br></br><input type="text" id="d65" class='form-control' name="tarifniBroj5" required></br>
+                                <br></br><input type="text" id="d65" class='form-control' name="tarifniBroj5" ></br>
                                 <span class="tooltiptext" id = "tooltiptext1">Уноси се сви тарифни бројеви, ако постоје.</span>
 
                             </div>
@@ -8250,7 +8248,7 @@
                     </div>
                             <div class="col-lg-11" id = "tooltip1">
                             <span class="labelNazivi">Број рачуна за уплату</span> <!-- Tri polja za racun -->
-                                <br></br><input type="text" id="d105" class='form-control' name="brojRacuna5" required></br>
+                                <br></br><input type="text" id="d105" class='form-control' name="brojRacuna5" ></br>
                                 <span class="tooltiptext" id = "tooltiptext1">У ово поље се уноси број рачуна за уплату, који је потребно унети у уплатницу.</span>
 
                             </div>
@@ -8262,7 +8260,7 @@
                     </div>
                             <div class="col-lg-11" id = "tooltip1">
                             <span class="labelNazivi">Позив на број</span> <!-- Dva polja -->
-                                <br></br><input type="text" id="d115" class='form-control' name="pozivNaBroj5" required></br>
+                                <br></br><input type="text" id="d115" class='form-control' name="pozivNaBroj5" ></br>
                                 <span class="tooltiptext" id = "tooltiptext1">У ово поље се уноси позив на број (уколико постоји), који је потребно унети у уплатницу.</span>
 
                             </div>
@@ -8352,7 +8350,7 @@
                                     foreach($parsiran_json->acts as $vrednost){
                                     ?>
 
-                                    <?php echo "<option value=\"owner1\">" .$vrednost->title . "</option>";
+                                    <?php echo '<option value="'.$vrednost->title. '">' .$vrednost->title . "</option>";
 
 
                                      ;?>
@@ -8379,7 +8377,7 @@
 
                         <div class="col-lg-11" id = "tooltip1">
                         <span class="labelNazivi">Уколико пропис није објављен у службеном гласилу, навести назив прописа и приложити пропис</span>
-                        <br></br><input type="text" id="d56" class='form-control' name="clanPropisIzdatak6" required></br>
+                        <br></br><input type="text" id="d56" class='form-control' name="clanPropisIzdatak6" ></br>
                         <br>
                                           
     <div class="row">    
@@ -8415,7 +8413,7 @@
                     </div>
                             <div class="col-lg-11">
                             <span class="labelNazivi">Члан/ови прописа којим/а се утврђује издатак</span>
-                                <br></br><input type="text" class='form-control' name="clanPropisIzdatak6" required></br>
+                                <br></br><input type="text" class='form-control' name="clanPropisIzdatak6" ></br>
 
                             </div>
                             </div>
@@ -8428,7 +8426,7 @@
                     </div>
                             <div class="col-lg-11" id = "tooltip1">
                             <span class="labelNazivi">Тарифни број/еви</span>
-                                <br></br><input type="text" id="d66" class='form-control' name="tarifniBroj6" required></br>
+                                <br></br><input type="text" id="d66" class='form-control' name="tarifniBroj6" ></br>
                                 <span class="tooltiptext" id = "tooltiptext1">Уноси се сви тарифни бројеви, ако постоје.</span>
 
                             </div>
@@ -8476,7 +8474,7 @@
                     </div>
                             <div class="col-lg-11" id = "tooltip1">
                             <span class="labelNazivi">Број рачуна за уплату</span> <!-- Tri polja za racun -->
-                                <br></br><input type="text" id="d106" class='form-control' name="brojRacuna6" required></br>
+                                <br></br><input type="text" id="d106" class='form-control' name="brojRacuna6" ></br>
                                 <span class="tooltiptext" id = "tooltiptext1">У ово поље се уноси број рачуна за уплату, који је потребно унети у уплатницу.</span>
 
                             </div>
@@ -8488,7 +8486,7 @@
                     </div>
                             <div class="col-lg-11" id = "tooltip1">
                             <span class="labelNazivi">Позив на број</span> <!-- Dva polja -->
-                                <br></br><input type="text" id="d116" class='form-control' name="pozivNaBroj6" required></br>
+                                <br></br><input type="text" id="d116" class='form-control' name="pozivNaBroj6" ></br>
                                 <span class="tooltiptext" id = "tooltiptext1">У ово поље се уноси позив на број (уколико постоји), који је потребно унети у уплатницу.</span>
 
                             </div>
@@ -8579,7 +8577,7 @@
                                     foreach($parsiran_json->acts as $vrednost){
                                     ?>
 
-                                    <?php echo "<option value=\"owner1\">" .$vrednost->title . "</option>";
+                                    <?php echo '<option value="'.$vrednost->title. '">' .$vrednost->title . "</option>";
 
 
                                      ;?>
@@ -8606,7 +8604,7 @@
 
                         <div class="col-lg-11" id = "tooltip1">
                         <span class="labelNazivi">Уколико пропис није објављен у службеном гласилу, навести назив прописа и приложити пропис</span>
-                        <br></br><input type="text" id="d57" class='form-control' name="clanPropisIzdatak7" required></br>
+                        <br></br><input type="text" id="d57" class='form-control' name="clanPropisIzdatak7" ></br>
                         <br>
                                           
     <div class="row">    
@@ -8642,7 +8640,7 @@
                     </div>
                             <div class="col-lg-11">
                             <span class="labelNazivi">Члан/ови прописа којим/а се утврђује издатак</span>
-                                <br></br><input type="text" class='form-control' name="clanPropisIzdatak7" required></br>
+                                <br></br><input type="text" class='form-control' name="clanPropisIzdatak7" ></br>
 
                             </div>
                             </div>
@@ -8655,7 +8653,7 @@
                     </div>
                             <div class="col-lg-11" id = "tooltip1">
                             <span class="labelNazivi">Тарифни број/еви</span>
-                                <br></br><input type="text" id="d67" class='form-control' name="tarifniBroj7" required></br>
+                                <br></br><input type="text" id="d67" class='form-control' name="tarifniBroj7" ></br>
                                 <span class="tooltiptext" id = "tooltiptext1">Уноси се сви тарифни бројеви, ако постоје.</span>
 
                             </div>
@@ -8703,7 +8701,7 @@
                     </div>
                             <div class="col-lg-11" id = "tooltip1">
                             <span class="labelNazivi">Број рачуна за уплату</span> <!-- Tri polja za racun -->
-                                <br></br><input type="text" id="d107" class='form-control' name="brojRacuna7" required></br>
+                                <br></br><input type="text" id="d107" class='form-control' name="brojRacuna7" ></br>
                                 <span class="tooltiptext" id = "tooltiptext1">У ово поље се уноси број рачуна за уплату, који је потребно унети у уплатницу.</span>
 
                             </div>
@@ -8715,7 +8713,7 @@
                     </div>
                             <div class="col-lg-11" id = "tooltip1">
                             <span class="labelNazivi">Позив на број</span> <!-- Dva polja -->
-                                <br></br><input type="text" id="d117" class='form-control' name="pozivNaBroj7" required></br>
+                                <br></br><input type="text" id="d117" class='form-control' name="pozivNaBroj7" ></br>
                                 <span class="tooltiptext" id = "tooltiptext1">У ово поље се уноси позив на број (уколико постоји), који је потребно унети у уплатницу.</span>
 
                             </div>
@@ -8805,7 +8803,7 @@
                                     foreach($parsiran_json->acts as $vrednost){
                                     ?>
 
-                                    <?php echo "<option value=\"owner1\">" .$vrednost->title . "</option>";
+                                    <?php echo '<option value="'.$vrednost->title. '">' .$vrednost->title . "</option>";
 
 
                                      ;?>
@@ -8832,7 +8830,7 @@
 
                         <div class="col-lg-11" id = "tooltip1">
                         <span class="labelNazivi">Уколико пропис није објављен у службеном гласилу, навести назив прописа и приложити пропис</span>
-                        <br></br><input type="text" id="d58" class='form-control' name="clanPropisIzdatak8" required></br>
+                        <br></br><input type="text" id="d58" class='form-control' name="clanPropisIzdatak8" ></br>
                         <br>
                                          
     <div class="row">    
@@ -8868,7 +8866,7 @@
                     </div>
                             <div class="col-lg-11">
                             <span class="labelNazivi">Члан/ови прописа којим/а се утврђује издатак</span>
-                                <br></br><input type="text" class='form-control' name="clanPropisIzdatak8" required></br>
+                                <br></br><input type="text" class='form-control' name="clanPropisIzdatak8" ></br>
 
                             </div>
                             </div>
@@ -8881,7 +8879,7 @@
                     </div>
                             <div class="col-lg-11" id = "tooltip1">
                             <span class="labelNazivi">Тарифни број/еви</span>
-                                <br></br><input type="text" id="d68" class='form-control' name="tarifniBroj8" required></br>
+                                <br></br><input type="text" id="d68" class='form-control' name="tarifniBroj8" ></br>
                                 <span class="tooltiptext" id = "tooltiptext1">Уноси се сви тарифни бројеви, ако постоје.</span>
 
                             </div>
@@ -8929,7 +8927,7 @@
                     </div>
                             <div class="col-lg-11" id = "tooltip1">
                             <span class="labelNazivi">Број рачуна за уплату</span> <!-- Tri polja za racun -->
-                                <br></br><input type="text" id="d108" class='form-control' name="brojRacuna8" required></br>
+                                <br></br><input type="text" id="d108" class='form-control' name="brojRacuna8" ></br>
                                 <span class="tooltiptext" id = "tooltiptext1">У ово поље се уноси број рачуна за уплату, који је потребно унети у уплатницу.</span>
 
                             </div>
@@ -8941,7 +8939,7 @@
                     </div>
                             <div class="col-lg-11" id = "tooltip1">
                             <span class="labelNazivi">Позив на број</span> <!-- Dva polja -->
-                                <br></br><input type="text" id="d118" class='form-control' name="pozivNaBroj8" required></br>
+                                <br></br><input type="text" id="d118" class='form-control' name="pozivNaBroj8" ></br>
                                 <span class="tooltiptext" id = "tooltiptext1">У ово поље се уноси позив на број (уколико постоји), који је потребно унети у уплатницу.</span>
 
                             </div>
@@ -9031,7 +9029,7 @@
                                     foreach($parsiran_json->acts as $vrednost){
                                     ?>
 
-                                    <?php echo "<option value=\"owner1\">" .$vrednost->title . "</option>";
+                                    <?php echo '<option value="'.$vrednost->title. '">' .$vrednost->title . "</option>";
 
 
                                      ;?>
@@ -9058,7 +9056,7 @@
 
                         <div class="col-lg-11" id = "tooltip1">
                         <span class="labelNazivi">Уколико пропис није објављен у службеном гласилу, навести назив прописа и приложити пропис</span>
-                        <br></br><input type="text" id="d59" class='form-control' name="clanPropisIzdatak9" required></br>
+                        <br></br><input type="text" id="d59" class='form-control' name="clanPropisIzdatak9" ></br>
                         <br>
                                           
     <div class="row">    
@@ -9094,7 +9092,7 @@
                     </div>
                             <div class="col-lg-11">
                             <span class="labelNazivi">Члан/ови прописа којим/а се утврђује издатак</span>
-                                <br></br><input type="text" class='form-control' name="clanPropisIzdatak9" required></br>
+                                <br></br><input type="text" class='form-control' name="clanPropisIzdatak9" ></br>
 
                             </div>
                             </div>
@@ -9107,7 +9105,7 @@
                     </div>
                             <div class="col-lg-11" id = "tooltip1">
                             <span class="labelNazivi">Тарифни број/еви</span>
-                                <br></br><input type="text" id="d69" class='form-control' name="tarifniBroj9" required></br>
+                                <br></br><input type="text" id="d69" class='form-control' name="tarifniBroj9" ></br>
                                 <span class="tooltiptext" id = "tooltiptext1">Уноси се сви тарифни бројеви, ако постоје.</span>
 
                             </div>
@@ -9155,7 +9153,7 @@
                     </div>
                             <div class="col-lg-11" id = "tooltip1">
                             <span class="labelNazivi">Број рачуна за уплату</span> <!-- Tri polja za racun -->
-                                <br></br><input type="text" id="d109" class='form-control' name="brojRacuna9" required></br>
+                                <br></br><input type="text" id="d109" class='form-control' name="brojRacuna9" ></br>
                                 <span class="tooltiptext" id = "tooltiptext1">У ово поље се уноси број рачуна за уплату, који је потребно унети у уплатницу.</span>
 
                             </div>
@@ -9167,7 +9165,7 @@
                     </div>
                             <div class="col-lg-11" id = "tooltip1">
                             <span class="labelNazivi">Позив на број</span> <!-- Dva polja -->
-                                <br></br><input type="text" id="d119" class='form-control' name="pozivNaBroj9" required></br>
+                                <br></br><input type="text" id="d119" class='form-control' name="pozivNaBroj9" ></br>
                                 <span class="tooltiptext" id = "tooltiptext1">У ово поље се уноси позив на број (уколико постоји), који је потребно унети у уплатницу.</span>
 
                             </div>
@@ -9255,7 +9253,7 @@
                                     foreach($parsiran_json->acts as $vrednost){
                                     ?>
 
-                                    <?php echo "<option value=\"owner1\">" .$vrednost->title . "</option>";
+                                    <?php echo '<option value="'.$vrednost->title. '">' .$vrednost->title . "</option>";
 
 
                                      ;?>
@@ -9282,7 +9280,7 @@
 
                         <div class="col-lg-11" id = "tooltip1">
                         <span class="labelNazivi">Уколико пропис није објављен у службеном гласилу, навести назив прописа и приложити пропис</span>
-                        <br></br><input type="text" id="d510" class='form-control' name="clanPropisIzdatak10" required></br>
+                        <br></br><input type="text" id="d510" class='form-control' name="clanPropisIzdatak10" ></br>
                         <br>
                                           
     <div class="row">    
@@ -9318,7 +9316,7 @@
                     </div>
                             <div class="col-lg-11">
                             <span class="labelNazivi">Члан/ови прописа којим/а се утврђује издатак</span>
-                                <br></br><input type="text" class='form-control' name="clanPropisIzdatak10" required></br>
+                                <br></br><input type="text" class='form-control' name="clanPropisIzdatak10" ></br>
 
                             </div>
                             </div>
@@ -9331,7 +9329,7 @@
                     </div>
                             <div class="col-lg-11" id = "tooltip1">
                             <span class="labelNazivi">Тарифни број/еви</span>
-                                <br></br><input type="text" id="d610" class='form-control' name="tarifniBroj10" required></br>
+                                <br></br><input type="text" id="d610" class='form-control' name="tarifniBroj10" ></br>
                                 <span class="tooltiptext" id = "tooltiptext1">Уноси се сви тарифни бројеви, ако постоје.</span>
 
                             </div>
@@ -9379,7 +9377,7 @@
                     </div>
                             <div class="col-lg-11" id = "tooltip1">
                             <span class="labelNazivi">Број рачуна за уплату</span> <!-- Tri polja za racun -->
-                                <br></br><input type="text" id="d1010" class='form-control' name="brojRacuna10" required></br>
+                                <br></br><input type="text" id="d1010" class='form-control' name="brojRacuna10" ></br>
                                 <span class="tooltiptext" id = "tooltiptext1">У ово поље се уноси број рачуна за уплату, који је потребно унети у уплатницу.</span>
 
                             </div>
@@ -9391,7 +9389,7 @@
                     </div>
                             <div class="col-lg-11" id = "tooltip1"> 
                             <span class="labelNazivi">Позив на број</span> <!-- Dva polja -->
-                                <br></br><input type="text" id="d1110" class='form-control' name="pozivNaBroj10" required></br>
+                                <br></br><input type="text" id="d1110" class='form-control' name="pozivNaBroj10" ></br>
                                 <span class="tooltiptext" id = "tooltiptext1">У ово поље се уноси позив на број (уколико постоји), који је потребно унети у уплатницу.</span>
 
                             </div>
@@ -9512,7 +9510,7 @@
                                     foreach($parsiran_json->acts as $vrednost){
                                     ?>
 
-                                    <?php echo "<option value=\"owner1\">" .$vrednost->title . "</option>";
+                                    <?php echo '<option value="'.$vrednost->title. '">' .$vrednost->title . "</option>";
 
 
                                      ;?>
@@ -9645,7 +9643,7 @@
                                     foreach($parsiran_json->acts as $vrednost){
                                     ?>
 
-                                    <?php echo "<option value=\"owner1\">" .$vrednost->title . "</option>";
+                                    <?php echo '<option value="'.$vrednost->title. '">' .$vrednost->title . "</option>";
 
 
                                      ;?>
@@ -9799,7 +9797,7 @@
                                     foreach($parsiran_json->acts as $vrednost){
                                     ?>
 
-                                    <?php echo "<option value=\"owner1\">" .$vrednost->title . "</option>";
+                                    <?php echo '<option value="'.$vrednost->title. '">' .$vrednost->title . "</option>";
 
 
                                      ;?>
@@ -10104,7 +10102,7 @@
                                     foreach($parsiran_json->acts as $vrednost){
                                     ?>
 
-                                    <?php echo "<option value=\"owner1\">" .$vrednost->title . "</option>";
+                                    <?php echo '<option value="'.$vrednost->title. '">' .$vrednost->title . "</option>";
 
 
                                      ;?>
@@ -10288,7 +10286,7 @@
                                     foreach($parsiran_json->acts as $vrednost){
                                     ?>
 
-                                    <?php echo "<option value=\"owner1\">" .$vrednost->title . "</option>";
+                                    <?php echo '<option value="'.$vrednost->title. '">' .$vrednost->title . "</option>";
 
 
                                      ;?>
@@ -10351,7 +10349,7 @@
                     </div> 
                             <div class="col-lg-11" id = "tooltip1">
                             <span class="labelNazivi">Члан/ови прописа којим/а се утврђује трошак</span>
-                                <br></br><input type="text" id="e13" class='form-control' name="zalbaTrosakPropisClan" required></br>
+                                <br></br><input type="text" id="e13" class='form-control' name="zalbaTrosakPropisClan" ></br>
                                 <span class="tooltiptext" id = "tooltiptext1">Уноси/е се члан/ови прописа, којим/а се дефинише овај финансијски трошак.</span>
 
                             </div>
@@ -10363,7 +10361,7 @@
                     </div> 
                             <div class="col-lg-11" id = "tooltip1">
                             <span class="labelNazivi">Тарифни број/еви</span>
-                                <br></br><input type="text" id="e14" class='form-control' name="zalbaTarifniBroj" required></br>
+                                <br></br><input type="text" id="e14" class='form-control' name="zalbaTarifniBroj" ></br>
                                 <span class="tooltiptext" id = "tooltiptext1">Уноси се сви тарифни бројеви, ако постоје.</span>
 
                             </div>
@@ -10413,7 +10411,7 @@
                     </div> 
                             <div class="col-lg-11" id = "tooltip1">
                             <span class="labelNazivi">Број рачуна за уплату</span> <!-- Tri polja za racun -->
-                                <br></br><input type="number" class='form-control' name="zalbaBrojRacuna" required></br>
+                                <br></br><input type="number" class='form-control' name="zalbaBrojRacuna" ></br>
                                 <span class="tooltiptext" id = "tooltiptext1">У ово поље се уноси број рачуна за уплату, који је потребно унети у уплатницу.</span>
 
                             </div>
@@ -10425,7 +10423,7 @@
                     </div> 
                             <div class="col-lg-11" id = "tooltip1">
                             <span class="labelNazivi">Позив на број</span> <!-- Dva polja -->
-                                <br></br><input type="number" class='form-control' name="zalbaPozivNaBroj" required></br>
+                                <br></br><input type="number" class='form-control' name="zalbaPozivNaBroj" ></br>
                                 <span class="tooltiptext" id = "tooltiptext1">У ово поље се уноси позив на број (уколико постоји), који је потребно унети у уплатницу.</span>
 
                             </div>
