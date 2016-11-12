@@ -22,6 +22,6 @@ class Propisi extends Model
 
     public function formular()
     {
-        return $this->belongsTo('Formular', 'sifraPostupka', 'sifraPostupka');
+        return $this->belongsTo('App\Formular', 'sifraPostupka', 'sifraPostupka');
     }
 }

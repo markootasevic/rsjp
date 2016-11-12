@@ -26,7 +26,7 @@ class Formular extends Model
 
     public function finansijskiIzdaci()
     {
-        return $this->hasMany('FinansijskiIzdaci','sifraPostupka','sifraPostupka');
+        return $this->hasMany('App\FinansijskiIzdaci','sifraPostupka','sifraPostupka');
     }
 
     public function propisi()

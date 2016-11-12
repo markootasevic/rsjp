@@ -53,13 +53,10 @@
                         <div class="col-lg-12" id = "tooltip1">
                             <br></br>
                              <h5><span class="labelNazivi">Назив административног поступка</span></h5>
-<<<<<<< HEAD
+
                             <textarea data-autoresize  name="nazivPostupka"></textarea>
                             <span class="tooltiptext" id = "tooltiptext1">У ово поље се уноси назив административног поступка, на начин како је унет у претходно припремљеној листи административних поступака. Смернице о именовању административних поступака погледати у одељку 4.4.3 Инструкције за спровођење пописа административних поступака.</span>
-=======
-                            <textarea data-autoresize required=""  name="nazivPostupka"></textarea>
-                            <span class="tooltiptext" id = "tooltiptext1" >У ово поље се уноси назив административног поступка, на начин како је унет у претходно припремљеној листи административних поступака. Смернице о именовању административних поступака погледати у одељку 4.4.3 Инструкције за спровођење пописа административних поступака.</span>
->>>>>>> 75b0e74ab0ae662fe825b73c13a9a4141074ec14
+
 
                         </br>
                         </div>
@@ -7182,7 +7179,7 @@
                             <span class="labelNazivi" >Врста издатака</span>
                             <br></br><select class="form-control" name="vrstaIzdatka1">
                             <option value="" disabled selected hidden>Изаберите</option>
-                                <option value="one">Републичка административна такса</option>
+                                <option value="Републичка административна такса">Републичка административна такса</option>
                                 <option value="Накнада">Накнада</option>
                                 <option value="Допринос">Допринос</option>
                                 <option value="Друго">Друго</option>
@@ -7410,7 +7407,7 @@
                             <span class="labelNazivi">Врста издатака</span>
                             <br></br><select class="form-control" name="vrstaIzdatka2">
                             <option value="" disabled selected hidden>Изаберите</option>
-                                <option value="one">Републичка административна такса</option>
+                                <option value="Републичка административна такса">Републичка административна такса</option>
                                 <option value="Накнада">Накнада</option>
                                 <option value="Допринос">Допринос</option>
                                 <option value="Друго">Друго</option>
@@ -7640,7 +7637,7 @@
                             <span class="labelNazivi">Врста издатака</span>
                             <br></br><select class="form-control" name="vrstaIzdatka3">
                             <option value="" disabled selected hidden>Изаберите</option>
-                                <option value="one">Републичка административна такса</option>
+                                <option value="Републичка административна такса">Републичка административна такса</option>
                                 <option value="Накнада">Накнада</option>
                                 <option value="Допринос">Допринос</option>
                                 <option value="Друго">Друго</option>
@@ -7864,7 +7861,7 @@
                             <span class="labelNazivi">Врста издатака</span>
                             <br></br><select class="form-control" name="vrstaIzdatka4">
                             <option value="" disabled selected hidden>Изаберите</option>
-                                <option value="one">Републичка административна такса</option>
+                                <option value="Републичка административна такса">Републичка административна такса</option>
                                 <option value="Накнада">Накнада</option>
                                 <option value="Допринос">Допринос</option>
                                 <option value="Друго">Друго</option>
@@ -8090,7 +8087,7 @@
                             <span class="labelNazivi">Врста издатака</span>
                             <br></br><select class="form-control" name="vrstaIzdatka5">
                             <option value="" disabled selected hidden>Изаберите</option>
-                                <option value="one">Републичка административна такса</option>
+                                <option value="Републичка административна такса">Републичка административна такса</option>
                                 <option value="Накнада">Накнада</option>
                                 <option value="Допринос">Допринос</option>
                                 <option value="Друго">Друго</option>
@@ -8315,7 +8312,7 @@
                             <span class="labelNazivi">Врста издатака</span>
                             <br></br><select class="form-control" name="vrstaIzdatka6">
                             <option value="" disabled selected hidden>Изаберите</option>
-                                <option value="one">Републичка административна такса</option>
+                                <option value="Републичка административна такса">Републичка административна такса</option>
                                 <option value="Накнада">Накнада</option>
                                 <option value="Допринос">Допринос</option>
                                 <option value="Друго">Друго</option>
@@ -8541,7 +8538,7 @@
                             <span class="labelNazivi">Врста издатака</span>
                             <br></br><select class="form-control" name="vrstaIzdatka7">
                             <option value="" disabled selected hidden>Изаберите</option>
-                                <option value="one">Републичка административна такса</option>
+                                <option value="Републичка административна такса">Републичка административна такса</option>
                                 <option value="Накнада">Накнада</option>
                                 <option value="Допринос">Допринос</option>
                                 <option value="Друго">Друго</option>
@@ -8769,7 +8766,7 @@
                             <span class="labelNazivi">Врста издатака</span>
                             <br></br><select class="form-control" name="vrstaIzdatka8">
                             <option value="" disabled selected hidden>Изаберите</option>
-                                <option value="one">Републичка административна такса</option>
+                                <option value="Републичка административна такса">Републичка административна такса</option>
                                 <option value="Накнада">Накнада</option>
                                 <option value="Допринос">Допринос</option>
                                 <option value="Друго">Друго</option>
@@ -8995,7 +8992,7 @@
                             <span class="labelNazivi">Врста издатака</span>
                             <br></br><select class="form-control" name="vrstaIzdatka9">
                             <option value="" disabled selected hidden>Изаберите</option>
-                                <option value="one">Републичка административна такса</option>
+                                <option value="Републичка административна такса">Републичка административна такса</option>
                                 <option value="Накнада">Накнада</option>
                                 <option value="Допринос">Допринос</option>
                                 <option value="Друго">Друго</option>
@@ -9220,7 +9217,7 @@
                             <span class="labelNazivi">Врста издатака</span>
                             <br></br><select class="form-control" name="vrstaIzdatka10">
                             <option value="" disabled selected hidden>Изаберите</option>
-                                <option value="one">Републичка административна такса</option>
+                                <option value="Републичка административна такса">Републичка административна такса</option>
                                 <option value="Накнада">Накнада</option>
                                 <option value="Допринос">Допринос</option>
                                 <option value="Друго">Друго</option>
