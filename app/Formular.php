@@ -41,7 +41,7 @@ class Formular extends Model
 
     public function zalbeniPostupci()
     {
-        return $this->hasMany('ZalbeniPostupak','sifraPostupka','sifraPostupka');
+        return $this->hasMany('App\ZalbeniPostupak','sifraPostupka','sifraPostupka');
     }
 
     public function ostaliElementiPostupka()
@@ -56,7 +56,7 @@ class Formular extends Model
 
     public function opstiPodaci()
     {
-        return $this->hasMany('OpstiPodaci','sifraPostupka','sifraPostupka');
+        return $this->hasMany('App\OpstiPodaci','sifraPostupka','sifraPostupka');
     }
 
 

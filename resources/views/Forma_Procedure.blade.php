@@ -347,7 +347,7 @@
                 				</div>
                 				<div class="col-lg-11" id = "tooltip1">
                                     <span class="labelNazivi">Електронска пошта</span>
-                                    <br><br><input type="text" id="e-mail" class='form-control' name='a44ElPosta' ></br>
+                                    <br><br><input type="text" id="e-mail" class='form-control' name='elektronskaPosta' ></br>
 
                 				</div>
                 			
@@ -748,7 +748,7 @@
                         
                         <div class="col-lg-11" id = "tooltip1">
                             <span class="labelNazivi">Пун назив издатог акта у случају позитивно решеног административног поступка</span>
-                            <br></br><textarea data-autoresize name="punNazivAkta"></textarea></br>
+                            <br></br><textarea data-autoresize name="nazivIzdatogAkta"></textarea></br>
                             <span class="tooltiptext" id = "tooltiptext1">Навести пун назив акта, којим се окончава административни поступак, односно који издаје надлежни орган / организација, након спроведеног поступка. Навести тачан назив акта, уколико је дефинисан прописом. Уколико акт није дефинисан прописом, навести тачан назив, који се налази на обрасцу самог акта.</span>
 
 
@@ -10072,13 +10072,13 @@
                 <span class="labelNazivi">Против акта донетог у административном поступку</span>
                             
                             <div class="radio">
-                                <label><input type="radio" value="Може се изјавити жалба" name="protivAkt[]">Може се изјавити жалба</label>
+                                <label><input type="radio" value="Може се изјавити жалба" name="protivAkt">Може се изјавити жалба</label>
                             </div>
                             <div class="radio">
-                                <label><input type="radio" value="Може се изјавити приговор" name="protivAkt[]">Може се изјавити приговор</label>
+                                <label><input type="radio" value="Може се изјавити приговор" name="protivAkt">Може се изјавити приговор</label>
                             </div>
                             <div class="radio">
-                                <label><input type="radio" value="Није дозвољена ни жалба ни приговор" name="protivAkt[]">Није дозвољена ни жалба ни приговор</label>
+                                <label><input type="radio" value="Није дозвољена ни жалба ни приговор" name="protivAkt">Није дозвољена ни жалба ни приговор</label>
                             </div>
                             <span class="tooltiptext" id = "tooltiptext1">У зависности од тога да ли је могуће изјављивање жалбе / приговора или не, бира се једна од понуђених опција. </span>
                             
@@ -10096,7 +10096,7 @@
 
 
 
-                                    <select id="result23" data-placeholder="Изаберите..." class="chosen-select" style="width: 100%" tabindex="2">
+                                    <select name="nazivPropisa" id="result23" data-placeholder="Изаберите..." class="chosen-select" style="width: 100%" tabindex="2">
 
                                     
 
@@ -10280,7 +10280,7 @@
                            <br><br>
 
 
-                                    <select id="result24" data-placeholder="Изаберите..." class="chosen-select" style="width: 100%" tabindex="2">
+                                    <select name="nazivPropisa" id="result24" data-placeholder="Изаберите..." class="chosen-select" style="width: 100%" tabindex="2">
 
                                     
 

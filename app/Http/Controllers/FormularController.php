@@ -7,6 +7,11 @@ use App\Formular;
 use App\Propisi;
 use App\FinansijskiIzdaci;
 use App\PotrebnaDokumentacija;
+use App\ZalbeniPostupak;
+use App\TroskoviZalbenogPostupka;
+use App\OpstiPodaci;
+use App\UkupanBrojZahteva;
+use App\LiceKojePopunjavaFormular;
 
 
 class FormularController extends Controller
@@ -19,7 +24,12 @@ class FormularController extends Controller
         self::dodajPropise($request, $formular);
         self::dodajFinansijskeIzdatke($request, $formular);
         self::dodajPotrebnaDokumenta($request, $formular);
-		
+        $zalbeniPostupak = self::dodajZalbeniPostupak($request, $formular);
+		self::dodajTroskoveZalbenogPostupka($request, $zalbeniPostupak);
+        $ukupanBrZahteva = UkupanBrojZahteva::create($request->all());
+        $liceKojePopunjavaFormular = LiceKojePopunjavaFormular::create($request->all());
+        self::dodajOpstePodatke($formular, $ukupanBrZahteva, $liceKojePopunjavaFormular, $request);
+        
         return redirect()->back();
 
     }
@@ -136,6 +146,118 @@ class FormularController extends Controller
 
                 // }
         }
+
+    }
+
+    public static function dodajZalbeniPostupak(Request $request, Formular $formular) {
+
+            $nacin = $request->input('zalbaPodnosenje');
+            $nacinIspis = "";
+            if (is_array($nacin) || is_object($nacin)) {
+                        foreach ($nacin as $nac) {
+                            $nacinIspis .= $nac.',';
+                        }
+                    
+                        $nacinIspis = substr($nacinIspis,0,strlen($nacinIspis)-1);
+                    }else {
+                        $nacinIspis = $nacin;
+                    }
+
+            $zalbeniPostupak = $formular->zalbeniPostupci()->create([
+                    'protivAkt' => $request->input('protivAkt'),
+                    'nazivPropisa'=> $request->input('nazivPropisa'),
+                    'zalbaPropisOpis'=> $request->input('zalbaPropisOpis'),
+                    'e_fajl'=> $request->input('e_fajl'),
+                    'zalbaPropisClan'=> $request->input('zalbaPropisClan'),
+                    'zalbaOrganDostava'=> $request->input('zalbaOrganDostava'),
+                    'zalbaRok'=> $request->input('zalbaRok'),
+                    'zalbaPodnosenje'=> $nacinIspis,
+                    'zalbaOrganOdluka'=> $request->input('zalbaOrganOdluka'),
+                    'rokZaOdlucivanjeZalbe'=> $request->input('rokZaOdlucivanjeZalbe'),
+                ]);
+
+            return $zalbeniPostupak;
+    }
+
+    public static function dodajTroskoveZalbenogPostupka(Request $request, ZalbeniPostupak $zalbeniPostupak) {
+
+        $zalbeniPostupak->troskoviZalbenogPostupka()->create([
+                'zalbaNazivTrosak' => $request->input('zalbaNazivTrosak'),
+                'nazivPropisa' => $request->input('nazivPropisa'),
+                'zalbaTrosakPropisOpis' => $request->input('zalbaTrosakPropisOpis'),
+                'e_fajl2' => $request->input('e_fajl2'),
+                'zalbaTrosakPropisClan' => $request->input('zalbaTrosakPropisClan'),
+                'zalbaTarifniBroj' => $request->input('zalbaTarifniBroj'),
+                'zalbaIznos' => $request->input('zalbaIznos'),
+                'zalbaSvrhaPlacanja' => $request->input('zalbaSvrhaPlacanja'),
+                'zalbaPrimalac' => $request->input('zalbaPrimalac'),
+                'zalbaBrojRacuna' => $request->input('zalbaBrojRacuna'),
+                'zalbaPozivNaBroj' => $request->input('zalbaPozivNaBroj'),
+            ]);
+      
+    }
+
+    public function dodajOpstePodatke(Formular $formular,UkupanBrojZahteva $ukupanBrZahteva, LiceKojePopunjavaFormular $liceKojePopunjavaFormular, Request $request){
+      
+        $opstiPodaci =new OpstiPodaci();
+        $opstiPodaci->formular()->associate($formular);
+        $opstiPodaci->liceKojePopunjavaFormular()->associate($liceKojePopunjavaFormular);
+        $opstiPodaci->ukupanBrojZahteva()->associate($ukupanBrZahteva);
+
+        $opstiPodaci->nadlezniOrgan = $request->input('nadlezniOrgan');
+        $opstiPodaci->nadlezniOrgan2 = $request->input('nadlezniOrgan2');
+        $opstiPodaci->organizacionaJedinica = $request->input('organizacionaJedinica');
+
+        $subjekti = $request->input('subjekti');
+        $subjektiIspis = "";
+            if (is_array($subjekti) || is_object($subjekti)) {
+                        foreach ($subjekti as $nac) {
+                            $subjektiIspis .= $nac.',';
+                        }
+                    
+                        $subjektiIspis = substr($subjektiIspis,0,strlen($subjektiIspis)-1);
+                    }else {
+                        $subjektiIspis = $subjekti;
+                    }
+
+
+        $opstiPodaci->subjekti = $subjektiIspis;
+        $opstiPodaci->vrstaOvlascenja = $request->input('vrstaOvlascenja');
+
+        $nivoVlasti = $request->input('nivoVlasti');
+        $nivoVlastiIspis = "";
+            if (is_array($nivoVlasti) || is_object($nivoVlasti)) {
+                        foreach ($nivoVlasti as $nac) {
+                            $nivoVlastiIspis .= $nac.',';
+                        }
+                    
+                        $nivoVlastiIspis = substr($nivoVlastiIspis,0,strlen($nivoVlastiIspis)-1);
+                    }else {
+                        $nivoVlastiIspis = $nivoVlasti;
+                    }
+
+        $opstiPodaci->nivoVlasti = $nivoVlastiIspis;
+        $opstiPodaci->viseNivoa = $request->input('viseNivoa');
+
+        $sprovodjenjePostupka = $request->input('sprovodjenjePostupka');
+        $sprovodjenjePostupkaIspis = "";
+            if (is_array($sprovodjenjePostupka) || is_object($sprovodjenjePostupka)) {
+                        foreach ($sprovodjenjePostupka as $nac) {
+                            $sprovodjenjePostupkaIspis .= $nac.',';
+                        }
+                    
+                        $sprovodjenjePostupkaIspis = substr($sprovodjenjePostupkaIspis,0,strlen($sprovodjenjePostupkaIspis)-1);
+                    }else {
+                        $sprovodjenjePostupkaIspis = $sprovodjenjePostupka;
+                    }
+
+        $opstiPodaci->sprovodjenjePostupka = $sprovodjenjePostupkaIspis;
+        $opstiPodaci->vrstaPostupka = $request->input('vrstaPostupka');
+        $opstiPodaci->ucestalostPostupka = $request->input('ucestalostPostupka');
+        $opstiPodaci->intenzitetPodnosenja = $request->input('intenzitetPodnosenja');
+        $opstiPodaci->nazivIzdatogAkta = $request->input('nazivIzdatogAkta');
+
+        $opstiPodaci->save();
 
     }
 
