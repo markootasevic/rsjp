@@ -6,9 +6,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class Delatnost extends Model
 {
-    // tabela
+    public $timestamps = false;
     protected $table = 'delatnost';
     protected $primaryKey = "delatnostRbr";
+     protected $fillable = [
+        'delatnost',
+     ];
 
     public function opstiPodaci()
     {
