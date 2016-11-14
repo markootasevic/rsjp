@@ -2224,10 +2224,10 @@
                             <span class="labelNazivi">Да ли у току спровођења административног поступка надлежни орган/организација комуницира са другим органима или организацијама?</span>
                             <br>
                             <div class="radio">
-                                <label><input type="radio" name="organKomunikacija[]" id="organKomunikacijaDa" value="Да">Да</label>
+                                <label><input type="radio" name="organKomunikacija" id="organKomunikacijaDa" value="Да">Да</label>
                             </div>
                             <div class="radio">
-                                <label><input type="radio" name="organKomunikacija[]" id="organKomunikacijaNe" value="Не">Не</label>
+                                <label><input type="radio" name="organKomunikacija" id="organKomunikacijaNe" value="Не">Не</label>
                             </div>
                             <span class="tooltiptext" id = "tooltiptext1">Уколико у поступку учествују и други органи или организације, потребно је одговорити ДА. У супротном, обележити одговор НЕ.</span>
 

@@ -36,7 +36,7 @@ class Formular extends Model
 
     public function svrhePostupka()
     {
-        return $this->hasMany('SvrhaPostupka','sifraPostupka','sifraPostupka');
+        return $this->hasMany('App\SvrhaPostupka','sifraPostupka','sifraPostupka');
     }
 
     public function zalbeniPostupci()

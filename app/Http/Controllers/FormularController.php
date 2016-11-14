@@ -7,12 +7,16 @@ use App\Formular;
 use App\Propisi;
 use App\FinansijskiIzdaci;
 use App\PotrebnaDokumentacija;
+<<<<<<< Updated upstream
 use App\ZalbeniPostupak;
 use App\TroskoviZalbenogPostupka;
 use App\OpstiPodaci;
 use App\UkupanBrojZahteva;
 use App\LiceKojePopunjavaFormular;
 
+=======
+use App\SvrhaPostupkaStavke;
+>>>>>>> Stashed changes
 
 class FormularController extends Controller
 {
@@ -24,12 +28,17 @@ class FormularController extends Controller
         self::dodajPropise($request, $formular);
         self::dodajFinansijskeIzdatke($request, $formular);
         self::dodajPotrebnaDokumenta($request, $formular);
+<<<<<<< Updated upstream
         $zalbeniPostupak = self::dodajZalbeniPostupak($request, $formular);
 		self::dodajTroskoveZalbenogPostupka($request, $zalbeniPostupak);
         $ukupanBrZahteva = UkupanBrojZahteva::create($request->all());
         $liceKojePopunjavaFormular = LiceKojePopunjavaFormular::create($request->all());
         self::dodajOpstePodatke($formular, $ukupanBrZahteva, $liceKojePopunjavaFormular, $request);
         
+=======
+		self::dodajSvrhuPostupka($request, $formular);
+
+>>>>>>> Stashed changes
         return redirect()->back();
 
     }
@@ -149,6 +158,7 @@ class FormularController extends Controller
 
     }
 
+<<<<<<< Updated upstream
     public static function dodajZalbeniPostupak(Request $request, Formular $formular) {
 
             $nacin = $request->input('zalbaPodnosenje');
@@ -259,6 +269,42 @@ class FormularController extends Controller
 
         $opstiPodaci->save();
 
+=======
+    public static function dodajSvrhuPostupka(Request $request, Formular $formular) {
+        
+        $svrhaPostupka = $formular->svrhePostupka()->create([
+            'svrhaIOpis' => $request->input('svrhaIOpis'),
+            'organKomunikacija' => $request->input('organKomunikacija'),
+        ]);
+
+        for ($i=0; $i <= 9; $i++) { 
+            $svrhaPostupkaStavke = self::dodajSvrhuPostupkaStavke($request, $i);
+
+            if ($svrhaPostupkaStavke != null) {
+                $svrhaPostupka->svrhaPostupkaStavke()->save($svrhaPostupkaStavke);
+                // $svrhaPostupka->save();
+            } else {
+                break;
+            }
+        }
+
+    }
+
+    public static function dodajSvrhuPostupkaStavke(Request $request, $i) {
+
+        $a = $i;
+
+        $svrhaPostupkaStavke = SvrhaPostupkaStavke::create([
+            'organizacijaPreklapanje' => $request->input('organizacijaPreklapanje'.$a),
+            'aktivnostPreklapanje' => $request->input('aktivnostPreklapanje'.$a),
+        ]);
+
+        if($request->input('organizacijaPreklapanje'.$a) == null || $request->input('organizacijaPreklapanje'.$a) == "") {
+            return null;
+        }
+
+        return $svrhaPostupkaStavke;
+>>>>>>> Stashed changes
     }
 
 }
