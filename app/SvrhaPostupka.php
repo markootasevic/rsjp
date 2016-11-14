@@ -26,6 +26,6 @@ class SvrhaPostupka extends Model
 
     public function svrhaPostupkaStavke()
     {
-        return $this->hasMany('App\SvrhaPoststupkaStavke','svrhaID','svrhaID');
+        return $this->hasMany('App\SvrhaPostupkaStavke','svrhaID','svrhaID');
     }
 }
