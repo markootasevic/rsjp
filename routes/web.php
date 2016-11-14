@@ -28,3 +28,7 @@ Route::get('/', function(){
 Route::get('/trifke' ,function() {
 	return view('prikaz/prikaz4');
 });
+
+Route::get('/danijel' ,function() {
+	return view('prikaz/prikaz3');
+});
