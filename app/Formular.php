@@ -46,12 +46,12 @@ class Formular extends Model
 
     public function ostaliElementiPostupka()
     {
-        return $this->hasMany('OstaliElementiPostupka','sifraPostupka','sifraPostupka');
+        return $this->hasMany('App\OstaliElementiPostupka','sifraPostupka','sifraPostupka');
     }
 
     public function pojednostavljenjePostupaka()
     {
-        return $this->hasMany('PojednostavljenjePostupka','sifraPostupka','sifraPostupka');
+        return $this->hasMany('App\PojednostavljenjePostupka','sifraPostupka','sifraPostupka');
     }
 
     public function opstiPodaci()

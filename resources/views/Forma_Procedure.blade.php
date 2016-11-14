@@ -10483,13 +10483,13 @@
                         <span class="labelNazivi">Административни поступак је потребно</span>
                             
                             <div class="radio">
-                                <label><input type="radio" name="izmenaPostupak[]" id="ukinutiPostupak">Укинути</label>
+                                <label><input type="radio" name="izmenaPostupak" id="ukinutiPostupak" value="Укинути">Укинути</label>
                             </div>
                             <div class="radio">
-                                <label><input type="radio" name="izmenaPostupak[]" id="izmenitiPostupak">Изменити</label>
+                                <label><input type="radio" name="izmenaPostupak" id="izmenitiPostupak" value="Изменити">Изменити</label>
                             </div>
                             <div class="radio">
-                                <label><input type="radio" name="izmenaPostupak[]" id="neMenjati">Није потребно изменити нити укинути</label>
+                                <label><input type="radio" name="izmenaPostupak" id="neMenjati"  value="Није потребно изменити нити укинути">Није потребно изменити нити укинути</label>
                             </div>
                             <span class="tooltiptext" id = "tooltiptext1">У зависности од искуства службеника, бира се једна од понуђених опција.</span>
                     </div>
