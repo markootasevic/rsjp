@@ -53,8 +53,7 @@
             <a href="https://github.com/zavoloklom/material-design-color-palette" target="_blank">GitHub</a>
           </td>
           <td data-title="Status">У изради</td>
-          <td><button class="btn btn-info">Сачувај</button>
-          <button class="btn btn-warning">Попуни</button></td>
+          <td><button class="btn btn-info">Сачувај</button></td>
         </tr>
         <tr>
           <!--  -->
