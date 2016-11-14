@@ -44,5 +44,9 @@ class OpstiPodaci extends Model
         return $this->hasMany('App\Delatnost','opstiPodaciID','opstiPodaciID');
     }
 
+    public function poddelatnosti() {
+      return $this->hasMany('App\Poddelatnost','opstiPodaciID','opstiPodaciID');
+    }
+
 
 }

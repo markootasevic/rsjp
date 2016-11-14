@@ -15,12 +15,12 @@ class Delatnost extends Model
 
     public function opstiPodaci()
     {
-        return $this->belongsTo('OpstiPodaci', 'opstiPodaciID', 'opstiPodaciID');
+        return $this->belongsTo('App\OpstiPodaci', 'opstiPodaciID', 'opstiPodaciID');
     }
 
     public function poddelatnosti()
     {
-        return $this->hasMany('Poddelatnost','delatnostRbr','delatnostRbr');
+        return $this->hasMany('App\Poddelatnost','delatnostRbr','delatnostRbr');
     }
 
 }

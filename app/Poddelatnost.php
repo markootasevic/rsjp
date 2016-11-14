@@ -10,11 +10,15 @@ class Poddelatnost extends Model
     protected $table = 'poddelatnost';
     protected $primaryKey = "poddelatnostRbr";
     protected $fillable = [
-    	
+    	'poddelatnost',
     ];
 
     public function delatnost()
     {
-        return $this->belongsTo('Delatnost', 'delatnostRbr', 'delatnostRbr');
+        return $this->belongsTo('App\Delatnost', 'delatnostRbr', 'delatnostRbr');
+    }
+
+    public function opstiPodaci() {
+      return $this->belongsTo('App\OpstiPodaci', 'opstiPodaciID', 'opstiPodaciID');
     }
 }

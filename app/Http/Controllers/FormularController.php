@@ -12,10 +12,12 @@ use App\TroskoviZalbenogPostupka;
 use App\OpstiPodaci;
 use App\UkupanBrojZahteva;
 use App\LiceKojePopunjavaFormular;
-use App\svrhaPostupka;
+use App\SvrhaPostupka;
 use App\SvrhaPostupkaStavke;
 use App\PojednostavljenjePostupka;
 use App\PredlogIzmenePostupka;
+use App\Delatnost;
+use App\Poddelatnost;
 
 class FormularController extends Controller
 {
@@ -33,10 +35,11 @@ class FormularController extends Controller
         
         $ukupanBrZahteva = UkupanBrojZahteva::create($request->all());
         $liceKojePopunjavaFormular = LiceKojePopunjavaFormular::create($request->all());
-        self::dodajOpstePodatke($formular, $ukupanBrZahteva, $liceKojePopunjavaFormular, $request);
+        $opstiPodaci = self::dodajOpstePodatke($formular, $ukupanBrZahteva, $liceKojePopunjavaFormular, $request);
         
 		self::dodajSvrhuPostupkaSaStavkama($request, $formular);
         self::dodajPojednostavljenjeSaPredlogomIzmenePostupka($request, $formular);
+        self::dodajDelatnostiIPoddelatnosti($request, $opstiPodaci);
 
         return redirect()->back();
 
@@ -266,6 +269,7 @@ class FormularController extends Controller
         $opstiPodaci->nazivIzdatogAkta = $request->input('nazivIzdatogAkta');
 
         $opstiPodaci->save();
+        return $opstiPodaci;
     }
 
     public static function dodajSvrhuPostupka(Request $request, Formular $formular) {
@@ -344,5 +348,59 @@ class FormularController extends Controller
         $pojednostavljenjePostupka = self::dodajPojednostavljenjePostupka($request, $formular);
         self::dodajPredlogIzmenePostupka($request, $pojednostavljenjePostupka);
     }
+
+    public static function dodajDelatnostiIPoddelatnosti(Request $request, OpstiPodaci $opstiPodaci) {
+
+        $delatnosti = $request->input('delatnost');
+        if (is_array($delatnosti) || is_object($delatnosti)) {
+
+            foreach ($delatnosti as $delatnost) {
+                $del = $opstiPodaci->delatnosti()->create([
+                        'delatnost'=> $delatnost,
+                    ]);
+                $slovo = $delatnost[0];
+                self::dodajPoddelatnostZaDelatnost($request, $opstiPodaci, $del, $slovo);
+            }
+
+        } else {
+                $opstiPodaci->delatnosti()->create([
+                        'delatnost'=> $delatnosti,
+                    ]);
+                $slovo = $delatnosti[0];
+                self::dodajPoddelatnostZaDelatnost($request, $opstiPodaci, $delatnosti, $slovo);
+        }
+
+    }
+
+    public static function dodajPoddelatnostZaDelatnost(Request $request, OpstiPodaci $opstiPodaci, Delatnost $delatnost, $index) {
+        $poddelatnosti = $request->input($index);
+        if($poddelatnosti == null || $poddelatnosti == '') {
+            return;
+        }
+        if (is_array($poddelatnosti) || is_object($poddelatnosti)) {
+            foreach ($poddelatnosti as $poddelatnost) {
+                // $d = $delatnost->delatnostRbr;
+                // $op = $delatnost->opstiPodaciID;
+                // Poddelatnost::create([
+                //         'delatnostRbr' => $d,
+                //         'opstiPodaciID'=> $op,
+                //         'poddelatnost' => $poddelatnost,
+                //          ]);
+                $podd = new Poddelatnost();
+                $podd->delatnost()->associate($delatnost);
+                $podd->opstiPodaci()->associate($opstiPodaci);
+                $podd->poddelatnost = $poddelatnost;
+                $podd->save();
+            }
+        } else {
+                Poddelatnost::create([
+                        'delatnostRbr' => $delatnost->delatnostRbr,
+                        'opstiPodaciID' => $delatnost->opstiPodaciID,
+                        'poddelatnost' => $poddelatnosti,
+                         ]);
+        }
+    }
+
+    
 
 }

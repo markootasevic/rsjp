@@ -5,8 +5,8 @@
 
                                 var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name";
-                                    checkbox.value = "value";
+                                    checkbox.name = "A[]";
+                                    checkbox.value = "Пољопривредна производња, лов и пратеће услужне делатности";
                                     checkbox.id = "id";
 
                                     var label = document.createElement('label')
@@ -23,8 +23,8 @@
 
                                   var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name1";
-                                    checkbox.value = "value1";
+                                    checkbox.name = "A[]";
+                                    checkbox.value = "Шумарство и сеча дрвећа";
                                     checkbox.id = "id1";
 
                                     var label = document.createElement('label')
@@ -41,8 +41,8 @@
 
                                    var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name2";
-                                    checkbox.value = "value2";
+                                    checkbox.name = "A[]";
+                                    checkbox.value = "Рибарство и аквакултуре";
                                     checkbox.id = "id2";
 
                                     var label = document.createElement('label')
@@ -81,8 +81,8 @@
 
                                 var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name";
-                                    checkbox.value = "value";
+                                    checkbox.name = "B[]";
+                                    checkbox.value = "Експлоатација угља";
                                     checkbox.id = "id3";
 
                                     var label = document.createElement('label')
@@ -99,8 +99,8 @@
 
                                   var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name1";
-                                    checkbox.value = "value4";
+                                    checkbox.name = "B[]";
+                                    checkbox.value = "Експлоатација сирове нафте и природног гаса";
                                     checkbox.id = "id4";
 
                                     var label = document.createElement('label')
@@ -117,8 +117,8 @@
 
                                    var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name5";
-                                    checkbox.value = "value5";
+                                    checkbox.name = "B[]";
+                                    checkbox.value = "Експлоатација руда метала";
                                     checkbox.id = "id5";
                                     checkbox.style = "<>"
 
@@ -136,8 +136,8 @@
 
                                    var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name6";
-                                    checkbox.value = "value6";
+                                    checkbox.name = "B[]";
+                                    checkbox.value = "Остало рударство";
                                     checkbox.id = "id6";
 
                                     var label = document.createElement('label')
@@ -154,8 +154,8 @@
 
                                     var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name7";
-                                    checkbox.value = "value7";
+                                    checkbox.name = "B[]";
+                                    checkbox.value = "Услужне делатности у рударству и геолошким истраживањима";
                                     checkbox.id = "id7";
 
                                     var label = document.createElement('label')
@@ -201,8 +201,8 @@
 
                                 var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name";
-                                    checkbox.value = "value";
+                                    checkbox.name = "C[]";
+                                    checkbox.value = "Производња прехрамбених производа";
                                     checkbox.id = "id8";
 
                                     var label = document.createElement('label')
@@ -219,8 +219,8 @@
 
                                   var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name1";
-                                    checkbox.value = "value9";
+                                    checkbox.name = "C[]";
+                                    checkbox.value = "Производња пића";
                                     checkbox.id = "id9";
 
                                     var label = document.createElement('label')
@@ -237,8 +237,8 @@
 
                                    var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name11";
-                                    checkbox.value = "value11";
+                                    checkbox.name = "C[]";
+                                    checkbox.value = "Производња дуванских производа";
                                     checkbox.id = "id11";
 
                                     var label = document.createElement('label')
@@ -255,8 +255,8 @@
 
                                    var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name12";
-                                    checkbox.value = "value12";
+                                    checkbox.name = "C[]";
+                                    checkbox.value = "Производња текстила";
                                     checkbox.id = "id12";
 
                                     var label = document.createElement('label')
@@ -273,8 +273,8 @@
 
                                     var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name13";
-                                    checkbox.value = "value13";
+                                    checkbox.name = "C[]";
+                                    checkbox.value = "Производња одевних предмета";
                                     checkbox.id = "id13";
 
                                     var label = document.createElement('label')
@@ -291,8 +291,8 @@
 
                                      var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name14";
-                                    checkbox.value = "value14";
+                                    checkbox.name = "B[]";
+                                    checkbox.value = "Производња коже и предмета од коже";
                                     checkbox.id = "id14";
 
                                     var label = document.createElement('label')
@@ -309,8 +309,8 @@
 
                                      var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name15";
-                                    checkbox.value = "value15";
+                                    checkbox.name = "C[]";
+                                    checkbox.value = "Прерада дрвета и производи од дрвета, плуте, сламе и прућа, осим намештаја";
                                     checkbox.id = "id15";
 
                                     var label = document.createElement('label')
@@ -327,8 +327,8 @@
 
                                     var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name16";
-                                    checkbox.value = "value16";
+                                    checkbox.name = "C[]";
+                                    checkbox.value = "Производња папира и производа од папира";
                                     checkbox.id = "id16";
 
                                     var label = document.createElement('label')
@@ -345,8 +345,8 @@
 
                                     var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name17";
-                                    checkbox.value = "value17";
+                                    checkbox.name = "C[]";
+                                    checkbox.value = "Штампање и умножавање аудио и видео записа";
                                     checkbox.id = "id17";
 
                                     var label = document.createElement('label')
@@ -363,8 +363,8 @@
 
                                     var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name18";
-                                    checkbox.value = "value18";
+                                    checkbox.name = "C[]";
+                                    checkbox.value = "Производња кокса и деривата нафте";
                                     checkbox.id = "id18";
 
                                     var label = document.createElement('label')
@@ -381,8 +381,8 @@
                               
                                     var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name19";
-                                    checkbox.value = "value19";
+                                    checkbox.name = "C[]";
+                                    checkbox.value = "Производња хемикалија и хемијских производа";
                                     checkbox.id = "id19";
 
                                     var label = document.createElement('label')
@@ -399,8 +399,8 @@
                                
                                     var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name20";
-                                    checkbox.value = "value20";
+                                    checkbox.name = "C[]";
+                                    checkbox.value = "Производња основних фармацеутских производа и препарата";
                                     checkbox.id = "id20";
 
                                     var label = document.createElement('label')
@@ -417,8 +417,8 @@
                                                          
                                      var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name21";
-                                    checkbox.value = "value21";
+                                    checkbox.name = "C[]";
+                                    checkbox.value = "Производња производа од гуме и пластике";
                                     checkbox.id = "id21";
 
                                     var label = document.createElement('label')
@@ -435,8 +435,8 @@
                                
                                       var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name22";
-                                    checkbox.value = "value22";
+                                    checkbox.name = "C[]";
+                                    checkbox.value = "Производња производа од осталих неметалних минерала";
                                     checkbox.id = "id22";
 
                                     var label = document.createElement('label')
@@ -453,8 +453,8 @@
 
                                       var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name23";
-                                    checkbox.value = "value23";
+                                    checkbox.name = "C[]";
+                                    checkbox.value = "Производња основних метала";
                                     checkbox.id = "id23";
 
                                     var label = document.createElement('label')
@@ -471,8 +471,8 @@
 
                                       var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name24";
-                                    checkbox.value = "value24";
+                                    checkbox.name = "C[]";
+                                    checkbox.value = "Производња металних производа, осим машина и уређаја";
                                     checkbox.id = "id24";
 
                                     var label = document.createElement('label')
@@ -489,8 +489,8 @@
 
                                       var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name25";
-                                    checkbox.value = "value25";
+                                    checkbox.name = "C[]";
+                                    checkbox.value = "Производња рачунара, електронских и оптичких производа";
                                     checkbox.id = "id25";
 
                                     var label = document.createElement('label')
@@ -507,8 +507,8 @@
 
                                      var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name26";
-                                    checkbox.value = "value26";
+                                    checkbox.name = "C[]";
+                                    checkbox.value = "Производња електричне опреме";
                                     checkbox.id = "id26";
 
                                     var label = document.createElement('label')
@@ -525,8 +525,8 @@
 
                                       var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name27";
-                                    checkbox.value = "value27";
+                                    checkbox.name = "C[]";
+                                    checkbox.value = "Производња непоменутих машина и непоменуте опреме";
                                     checkbox.id = "id27";
 
                                     var label = document.createElement('label')
@@ -543,8 +543,8 @@
 
                                     var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name28";
-                                    checkbox.value = "value28";
+                                    checkbox.name = "C[]";
+                                    checkbox.value = "Производња моторних возила, приколица и полуприколица";
                                     checkbox.id = "id28";
 
                                     var label = document.createElement('label')
@@ -561,8 +561,8 @@
 
                                        var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name29";
-                                    checkbox.value = "value29";
+                                    checkbox.name = "C[]";
+                                    checkbox.value = "Производња осталих саобраћајних средстава";
                                     checkbox.id = "id29";
 
                                     var label = document.createElement('label')
@@ -579,8 +579,8 @@
 
                                        var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name30";
-                                    checkbox.value = "value30";
+                                    checkbox.name = "C[]";
+                                    checkbox.value = "Производња намештаја";
                                     checkbox.id = "id30";
 
                                     var label = document.createElement('label')
@@ -597,8 +597,8 @@
 
                                     var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name31";
-                                    checkbox.value = "value32";
+                                    checkbox.name = "C[]";
+                                    checkbox.value = "Остале прерађивачке делатности";
                                     checkbox.id = "id32";
 
                                     var label = document.createElement('label')
@@ -615,8 +615,8 @@
 
                                     var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name33";
-                                    checkbox.value = "value33";
+                                    checkbox.name = "C[]";
+                                    checkbox.value = "Поправка и монтажа машина и опреме";
                                     checkbox.id = "id33";
 
                                     var label = document.createElement('label')
@@ -748,8 +748,8 @@
 
                                 var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name";
-                                    checkbox.value = "value";
+                                    checkbox.name = "D[]";
+                                    checkbox.value = "Снабдевање електричном енергијом, гасом, паром и климатизација";
                                     checkbox.id = "id34";
 
                                     var label = document.createElement('label')
@@ -779,8 +779,8 @@
 
                                 var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name";
-                                    checkbox.value = "value";
+                                    checkbox.name = "E[]";
+                                    checkbox.value = "Скупљање, пречишћавање и дистрибуција воде";
                                     checkbox.id = "id35";
 
                                     var label = document.createElement('label')
@@ -797,8 +797,8 @@
 
                                     var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name";
-                                    checkbox.value = "value";
+                                    checkbox.name = "E[]";
+                                    checkbox.value = "Уклањање отпадних вода";
                                     checkbox.id = "id36";
 
                                     var label = document.createElement('label')
@@ -815,8 +815,8 @@
 
                                     var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name";
-                                    checkbox.value = "value";
+                                    checkbox.name = "E[]";
+                                    checkbox.value = "Сакупљање, третман и одлагање отпада; поновно искоришћавање отпадних материја";
                                     checkbox.id = "id37";
 
                                     var label = document.createElement('label')
@@ -833,8 +833,8 @@
 
                                     var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name";
-                                    checkbox.value = "value";
+                                    checkbox.name = "E[]";
+                                    checkbox.value = "Санација, рекултивација и друге услуге у области управљања отпадом";
                                     checkbox.id = "id38";
 
                                     var label = document.createElement('label')
@@ -876,8 +876,8 @@
 
                                  var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name";
-                                    checkbox.value = "value";
+                                    checkbox.name = "F[]";
+                                    checkbox.value = "Изградња зграда";
                                     checkbox.id = "id39";
 
                                     var label = document.createElement('label')
@@ -894,8 +894,8 @@
 
                                     var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name";
-                                    checkbox.value = "value";
+                                    checkbox.name = "F[]";
+                                    checkbox.value = "Изградња осталих грађевина";
                                     checkbox.id = "id40";
 
                                     var label = document.createElement('label')
@@ -912,8 +912,8 @@
 
                                     var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name";
-                                    checkbox.value = "value";
+                                    checkbox.name = "F[]";
+                                    checkbox.value = "Специјализовани грађевински радови";
                                     checkbox.id = "id41";
 
                                     var label = document.createElement('label')
@@ -953,8 +953,8 @@
 
                                     var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name";
-                                    checkbox.value = "value";
+                                    checkbox.name = "G[]";
+                                    checkbox.value = "Трговина на велико и трговина на мало и поправка моторних возила и мотоцикала";
                                     checkbox.id = "id42";
 
                                     var label = document.createElement('label')
@@ -971,8 +971,8 @@
 
                                     var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name";
-                                    checkbox.value = "value";
+                                    checkbox.name = "G[]";
+                                    checkbox.value = "Трговина на велико, осим трговине моторним возилима и мотоциклима";
                                     checkbox.id = "id43";
 
                                     var label = document.createElement('label')
@@ -989,8 +989,8 @@
 
                                     var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name";
-                                    checkbox.value = "value";
+                                    checkbox.name = "G[]";
+                                    checkbox.value = "Трговина на мало, осим трговине моторним возилима и мотоциклима";
                                     checkbox.id = "id44";
 
                                     var label = document.createElement('label')
@@ -1029,8 +1029,8 @@
 
                                  var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name";
-                                    checkbox.value = "value";
+                                    checkbox.name = "H[]";
+                                    checkbox.value = "Копнени саобраћај и цевоводни транспорт";
                                     checkbox.id = "id45";
 
                                     var label = document.createElement('label')
@@ -1047,8 +1047,8 @@
 
                                     var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name";
-                                    checkbox.value = "value";
+                                    checkbox.name = "H[]";
+                                    checkbox.value = "Водени саобраћаj";
                                     checkbox.id = "id46";
 
                                     var label = document.createElement('label')
@@ -1065,8 +1065,8 @@
 
                                     var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name";
-                                    checkbox.value = "value";
+                                    checkbox.name = "H[]";
+                                    checkbox.value = "Ваздушни саобраћај";
                                     checkbox.id = "id47";
 
                                     var label = document.createElement('label')
@@ -1083,8 +1083,8 @@
 
                                     var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name";
-                                    checkbox.value = "value";
+                                    checkbox.name = "H[]";
+                                    checkbox.value = "Складиштење и пратеће активности у саобраћају";
                                     checkbox.id = "id48";
 
                                     var label = document.createElement('label')
@@ -1101,8 +1101,8 @@
 
                                     var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name";
-                                    checkbox.value = "value";
+                                    checkbox.name = "H[]";
+                                    checkbox.value = "Поштанске активности";
                                     checkbox.id = "id49";
 
                                     var label = document.createElement('label')
@@ -1148,8 +1148,8 @@
 
                                     var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name";
-                                    checkbox.value = "value";
+                                    checkbox.name = "I[]";
+                                    checkbox.value = "Смештај";
                                     checkbox.id = "id50";
 
                                     var label = document.createElement('label')
@@ -1166,8 +1166,8 @@
 
                                     var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name";
-                                    checkbox.value = "value";
+                                    checkbox.name = "I[]";
+                                    checkbox.value = "Делатност припремања и послуживања хране и пића";
                                     checkbox.id = "id51";
 
                                     var label = document.createElement('label')
@@ -1202,8 +1202,8 @@
 
                                     var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name";
-                                    checkbox.value = "value";
+                                    checkbox.name = "J[]";
+                                    checkbox.value = "Издавачке делатности";
                                     checkbox.id = "id52";
 
                                     var label = document.createElement('label')
@@ -1220,8 +1220,8 @@
 
                                     var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name";
-                                    checkbox.value = "value";
+                                    checkbox.name = "J[]";
+                                    checkbox.value = "Кинематографска и телевизијска продукција, снимање звучних записа и издавање музичких";
                                     checkbox.id = "id53";
 
                                     var label = document.createElement('label');
@@ -1247,8 +1247,8 @@
 
                                     var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name";
-                                    checkbox.value = "value";
+                                    checkbox.name = "J[]";
+                                    checkbox.value = "Програмске активности и емитовање";
                                     checkbox.id = "id54";
 
                                     var label = document.createElement('label')
@@ -1265,8 +1265,8 @@
 
                                     var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name";
-                                    checkbox.value = "value";
+                                    checkbox.name = "J[]";
+                                    checkbox.value = "Телекомуникације";
                                     checkbox.id = "id55";
 
                                     var label = document.createElement('label')
@@ -1283,8 +1283,8 @@
 
                                     var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name";
-                                    checkbox.value = "value";
+                                    checkbox.name = "J[]";
+                                    checkbox.value = "Рачунарско програмирање, консултантске и с тим повезане делатности";
                                     checkbox.id = "id56";
 
                                     var label = document.createElement('label')
@@ -1301,8 +1301,8 @@
 
                                        var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name";
-                                    checkbox.value = "value";
+                                    checkbox.name = "J[]";
+                                    checkbox.value = "Информационе услужне делатности";
                                     checkbox.id = "id57";
 
                                     var label = document.createElement('label')
@@ -1357,8 +1357,8 @@
 
                                     var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name";
-                                    checkbox.value = "value";
+                                    checkbox.name = "K[]";
+                                    checkbox.value = "Финансијске услуге, осим осигурања и пензијских фондова";
                                     checkbox.id = "id58";
 
                                     var label = document.createElement('label')
@@ -1375,8 +1375,8 @@
 
                                     var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name";
-                                    checkbox.value = "value";
+                                    checkbox.name = "K[]";
+                                    checkbox.value = "Осигурање, реосигурање и пензијски фондови, осим обавезног социјалног осигурања";
                                     checkbox.id = "id59";
 
                                     var label = document.createElement('label')
@@ -1393,8 +1393,8 @@
 
                                     var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name";
-                                    checkbox.value = "value";
+                                    checkbox.name = "K[]";
+                                    checkbox.value = "Помоћне делатности у пружању финансијских услуга и осигурању";
                                     checkbox.id = "id60";
 
                                     var label = document.createElement('label')
@@ -1432,8 +1432,8 @@
 
                                     var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name";
-                                    checkbox.value = "value";
+                                    checkbox.name = "L[]";
+                                    checkbox.value = "Пословање некретнинама";
                                     checkbox.id = "id61";
 
                                     var label = document.createElement('label')
@@ -1464,8 +1464,8 @@
 
                                  var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name";
-                                    checkbox.value = "value";
+                                    checkbox.name = "M[]";
+                                    checkbox.value = "Правни и рачуноводствени послови";
                                     checkbox.id = "id62";
 
                                     var label = document.createElement('label')
@@ -1482,8 +1482,8 @@
 
                                      var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name";
-                                    checkbox.value = "value";
+                                    checkbox.name = "M[]";
+                                    checkbox.value = "Управљачке делатности; саветовање у вези са управљањем";
                                     checkbox.id = "id63";
 
                                     var label = document.createElement('label')
@@ -1500,8 +1500,8 @@
 
                                      var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name";
-                                    checkbox.value = "value";
+                                    checkbox.name = "M[]";
+                                    checkbox.value = "Архитектонске и инжењерске делатности; инжењерско испитивање и анализе";
                                     checkbox.id = "id64";
 
                                     var label = document.createElement('label')
@@ -1518,8 +1518,8 @@
 
                                      var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name";
-                                    checkbox.value = "value";
+                                    checkbox.name = "M[]";
+                                    checkbox.value = "Научно истраживање и развој";
                                     checkbox.id = "id65";
 
                                     var label = document.createElement('label')
@@ -1536,8 +1536,8 @@
 
                                      var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name";
-                                    checkbox.value = "value";
+                                    checkbox.name = "M[]";
+                                    checkbox.value = "Рекламирање и истраживање тржишта";
                                     checkbox.id = "id66";
 
                                     var label = document.createElement('label')
@@ -1554,8 +1554,8 @@
 
                                      var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name";
-                                    checkbox.value = "value";
+                                    checkbox.name = "M[]";
+                                    checkbox.value = "Остале стручне, научне и техничке делатности";
                                     checkbox.id = "id67";
 
                                     var label = document.createElement('label')
@@ -1572,8 +1572,8 @@
 
                                       var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name";
-                                    checkbox.value = "value";
+                                    checkbox.name = "M[]";
+                                    checkbox.value = "Ветеринарске делатности";
                                     checkbox.id = "id68";
 
                                     var label = document.createElement('label')
@@ -1629,8 +1629,8 @@
 
                                     var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name";
-                                    checkbox.value = "value";
+                                    checkbox.name = "N[]";
+                                    checkbox.value = "Изнајмљивање и лизинг";
                                     checkbox.id = "id69";
 
                                     var label = document.createElement('label')
@@ -1647,8 +1647,8 @@
 
                                      var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name";
-                                    checkbox.value = "value";
+                                    checkbox.name = "N[]";
+                                    checkbox.value = "Делатности запошљавања";
                                     checkbox.id = "id70";
 
                                     var label = document.createElement('label')
@@ -1665,8 +1665,8 @@
 
                                      var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name";
-                                    checkbox.value = "value";
+                                    checkbox.name = "N[]";
+                                    checkbox.value = "Делатност путничких агенција, тур-оператора, услуге резервације и пратеће активности";
                                     checkbox.id = "id71";
 
                                     var label = document.createElement('label')
@@ -1683,8 +1683,8 @@
 
                                      var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name";
-                                    checkbox.value = "value";
+                                    checkbox.name = "N[]";
+                                    checkbox.value = "Заштитне и истражне делатности";
                                     checkbox.id = "id72";
 
                                     var label = document.createElement('label')
@@ -1701,8 +1701,8 @@
 
                                      var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name";
-                                    checkbox.value = "value";
+                                    checkbox.name = "N[]";
+                                    checkbox.value = "Услуге одржавања објеката и околине";
                                     checkbox.id = "id73";
 
                                     var label = document.createElement('label')
@@ -1719,8 +1719,8 @@
 
                                       var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name";
-                                    checkbox.value = "value";
+                                    checkbox.name = "N[]";
+                                    checkbox.value = "Канцеларијско-административне и друге помоћне пословне делатности";
                                     checkbox.id = "id74";
 
                                     var label = document.createElement('label')
@@ -1771,8 +1771,8 @@
 
                                   var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name";
-                                    checkbox.value = "value";
+                                    checkbox.name = "O[]";
+                                    checkbox.value = "Јавна управа и одбрана; обавезно социјално осигурање";
                                     checkbox.id = "id75";
 
                                     var label = document.createElement('label')
@@ -1802,8 +1802,8 @@
 
                                  var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name";
-                                    checkbox.value = "value";
+                                    checkbox.name = "P[]";
+                                    checkbox.value = "Образовање";
                                     checkbox.id = "id76";
 
                                     var label = document.createElement('label')
@@ -1833,8 +1833,8 @@
 
                                  var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name";
-                                    checkbox.value = "value";
+                                    checkbox.name = "Q[]";
+                                    checkbox.value = "Здравствене делатности";
                                     checkbox.id = "id77";
 
                                     var label = document.createElement('label')
@@ -1851,8 +1851,8 @@
 
                                        var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name";
-                                    checkbox.value = "value";
+                                    checkbox.name = "Q[]";
+                                    checkbox.value = "Социјална заштита са смештајем";
                                     checkbox.id = "id78";
 
                                     var label = document.createElement('label')
@@ -1869,8 +1869,8 @@
 
                                        var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name";
-                                    checkbox.value = "value";
+                                    checkbox.name = "Q[]";
+                                    checkbox.value = "Социјална заштита без смештаја";
                                     checkbox.id = "id79";
 
                                     var label = document.createElement('label')
@@ -1913,8 +1913,8 @@
 
                                  var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name";
-                                    checkbox.value = "value";
+                                    checkbox.name = "R[]";
+                                    checkbox.value = "Стваралачке, уметничке и забавне делатности";
                                     checkbox.id = "id80";
 
                                     var label = document.createElement('label')
@@ -1931,8 +1931,8 @@
 
                                        var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name";
-                                    checkbox.value = "value";
+                                    checkbox.name = "R[]";
+                                    checkbox.value = "Делатност библиотека, архива, музеја, галерија и збирки и остале културне делатности";
                                     checkbox.id = "id81";
 
                                     var label = document.createElement('label')
@@ -1949,8 +1949,8 @@
 
                                        var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name";
-                                    checkbox.value = "value";
+                                    checkbox.name = "R[]";
+                                    checkbox.value = "Коцкање и клађење";
                                     checkbox.id = "id82";
 
                                     var label = document.createElement('label')
@@ -1967,8 +1967,8 @@
 
                                             var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name";
-                                    checkbox.value = "value";
+                                    checkbox.name = "R[]";
+                                    checkbox.value = "Спортске, забавне и рекреативне делатности";
                                     checkbox.id = "id83";
 
                                     var label = document.createElement('label')
@@ -2013,8 +2013,8 @@
 
                                        var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name";
-                                    checkbox.value = "value";
+                                    checkbox.name = "S[]";
+                                    checkbox.value = "Делатности удружења";
                                     checkbox.id = "id84";
 
                                     var label = document.createElement('label')
@@ -2031,8 +2031,8 @@
 
                                        var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name";
-                                    checkbox.value = "value";
+                                    checkbox.name = "S[]";
+                                    checkbox.value = "Поправка рачунара и предмета за личну употребу и употребу у домаћинству";
                                     checkbox.id = "id85";
 
                                     var label = document.createElement('label')
@@ -2049,8 +2049,8 @@
 
                                             var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name";
-                                    checkbox.value = "value";
+                                    checkbox.name = "S[]";
+                                    checkbox.value = "Остале личне услужне делатности";
                                     checkbox.id = "id86";
 
                                     var label = document.createElement('label')
@@ -2089,8 +2089,8 @@
 
                                     var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name";
-                                    checkbox.value = "value";
+                                    checkbox.name = "T[]";
+                                    checkbox.value = "Делатност домаћинстава која запошљавају послугу";
                                     checkbox.id = "id87";
 
                                     var label = document.createElement('label')
@@ -2107,8 +2107,8 @@
 
                                             var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name";
-                                    checkbox.value = "value";
+                                    checkbox.name = "T[]";
+                                    checkbox.value = "Делатност домаћинстава која производе робу и услуге за сопствене потребе";
                                     checkbox.id = "id88";
 
                                     var label = document.createElement('label')
@@ -2142,8 +2142,8 @@
 
                                             var checkbox = document.createElement('input');
                                     checkbox.type = "checkbox";
-                                    checkbox.name = "name";
-                                    checkbox.value = "value";
+                                    checkbox.name = "U[]";
+                                    checkbox.value = "Делатност домаћинстава која производе робу и услуге за сопствене потребе";
                                     checkbox.id = "id89";
 
                                     var label = document.createElement('label')
