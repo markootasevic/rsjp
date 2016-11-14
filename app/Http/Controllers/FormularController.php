@@ -18,6 +18,9 @@ use App\PojednostavljenjePostupka;
 use App\PredlogIzmenePostupka;
 use App\Delatnost;
 use App\Poddelatnost;
+use App\OstaliElementiPostupka;
+use App\ObrazacZaPodnosenjeZahteva;
+use App\IzdataAkta;
 
 class FormularController extends Controller
 {
@@ -40,7 +43,9 @@ class FormularController extends Controller
 		self::dodajSvrhuPostupkaSaStavkama($request, $formular);
         self::dodajPojednostavljenjeSaPredlogomIzmenePostupka($request, $formular);
         self::dodajDelatnostiIPoddelatnosti($request, $opstiPodaci);
-
+        $ostaliElementiPostupka = self::dodajOstaleElementePostupka($request, $formular);
+        $obrazacZaPodnosenjeZahteva = self::dodajObrazacZaPodnosenjeZahteva($request, $ostaliElementiPostupka);
+        self::dodajIzdataAkta($request, $obrazacZaPodnosenjeZahteva);
         return redirect()->back();
 
     }
@@ -398,10 +403,91 @@ class FormularController extends Controller
                         'delatnostRbr' => $delatnost->delatnostRbr,
                         'opstiPodaciID' => $delatnost->opstiPodaciID,
                         'poddelatnost' => $poddelatnosti,
-                         ]);
+                ]);
         }
     }
 
+    public static function dodajOstaleElementePostupka(Request $request, Formular $formular) {
+       
+        $ostaliElementiPostupka = $formular->ostaliElementiPostupka()->create([
+            'rokPredmeta' => $request->input('rokPredmeta'),
+            'rokPredmeta1' => $request->input('rokPredmeta1'),
+            'rokZaResavanje' => $request->input('rokZaResavanje'),
+            'nazivPropisaRok' => $request->input('nazivPropisaRok'),
+            'rokPropisOpis' => $request->input('rokPropisOpis'),
+            'dj_fajl1' => $request->input('dj_fajl1'),
+            'propisRok' => $request->input('propisRok'),
+            'rokNeuredni' => $request->input('rokNeuredni'),
+            'rokUredni_Avg' => $request->input('rokUredni_Avg'),
+            'vremeVazenja' => $request->input('vremeVazenja'),
+            'nazivPropisaVremeVazenja' => $request->input('nazivPropisaVremeVazenja'),
+            'nijeObjavljenVremeVazenja' => $request->input('vazenjePropisOpis'),
+            'dj_fajl2' => $request->input('dj_fajl2'),
+            'vremeVazenjaIzdatog' => $request->input('vremeVazenjaIzdatog'), 
+        ]);
+
+        return $ostaliElementiPostupka;
+    }
+
+    public static function dodajObrazacZaPodnosenjeZahteva(Request $request, OstaliElementiPostupka $ostaliElementiPostupka) {
+
+        // $zahtevPodnosenje = $request->input('zahtevPodnosenje');
+        // $zahtevPodnosenjeZaIspis = "";
+        // if (is_array($zahtevPodnosenje) || is_object($zahtevPodnosenje)) {
+        //     foreach ($zahtevPodnosenje as $zahtevPod) {
+        //         $zahtevPodnosenjeZaIspis .= $zahtevPod.',';
+        //     }
+        
+        //     $zahtevPodnosenjeZaIspis = substr($zahtevPodnosenjeZaIspis,0,strlen($zahtevPodnosenjeZaIspis)-1);
+        // }else {
+        //     $zahtevPodnosenjeZaIspis = $zahtevPodnosenje;
+        // }
+        $zahtevPodnosenje = self::uzmiPodatkeSaCheckbox($request, 'zahtevPodnosenje');
+        $obrazacPreuzimanje = self::uzmiPodatkeSaCheckbox($request, 'obrazacPreuzimanje');
+        $obrazacDostava = self::uzmiPodatkeSaCheckbox($request, 'obrazacDostava');
+
+        $obrazacZaPodnosenjeZahteva = $ostaliElementiPostupka->obrasciZaPodnosenjeZahteva()->create([
+            'zahtevPodnosenje' => $zahtevPodnosenje,
+            'tipObrasca' => $request->input('tipObrasca'),
+            'nazivPropisa' => $request->input('nazivPropisaObrazac'),
+            'obrazacPropisOpis' => $request->input('obrazacPropisOpis'),
+            'dj_fajl3' => $request->input('dj_fajl3'),
+            'obrazacPropisClan' => $request->input('obrazacPropisClan'),
+            'obrazacPreuzimanje' => $obrazacPreuzimanje,
+            'linkObrazac' => $request->input('linkObrazac'),
+            'dj_fajl4' => $request->input('rokUredni_Avg'),
+            'obrazacDostava' => $obrazacDostava,
+        ]);
+
+        return $obrazacZaPodnosenjeZahteva;
+    }
+
+    public static function dodajIzdataAkta(Request $request, ObrazacZaPodnosenjeZahteva $obrazacZaPodnosenjeZahteva) {
+
+        $nacinDostave = self::uzmiPodatkeSaCheckbox($request, 'nacinDostave');
+
+        $obrazacZaPodnosenjeZahteva->izdatiAkti()->create([
+            'nacinDostave' => $nacinDostave,
+            'postojiRegistar' => $request->input('postojiRegistar'),
+            'aktDostupan' => $request->input('aktDostupan'),
+            'linkJavniRegistar' => $request->input('linkJavniRegistar'),
+        ]);
+    }
+
+    private static function uzmiPodatkeSaCheckbox(Request $request, $name) {
+        $checkBoxPodaci = $request->input($name);
+        $podaciZaIspis = "";
+        if (is_array($checkBoxPodaci) || is_object($checkBoxPodaci)) {
+            foreach ($checkBoxPodaci as $podaci) {
+                $podaciZaIspis .= $podaci.',';
+            }
+        
+            $podaciZaIspis = substr($podaciZaIspis,0,strlen($podaciZaIspis)-1);
+            return $podaciZaIspis;
+        }else {
+            return $checkBoxPodaci;
+        }
+    }
     
 
 }

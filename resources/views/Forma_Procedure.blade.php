@@ -9505,7 +9505,7 @@
                             <span class="labelNazivi">Назив прописа, којим се утврђује рок и број службеног гласила</span>
                            <br><br>
 
-                                    <select id="result25" data-placeholder="Изаберите..." class="chosen-select" style="width: 100%" tabindex="2">
+                                    <select id="result25" data-placeholder="Изаберите..." class="chosen-select" style="width: 100%" tabindex="2" name="nazivPropisaRok">
 
                                     
 
@@ -9638,7 +9638,7 @@
                            <br><br>
 
 
-                                    <select id="result21" data-placeholder="Изаберите..." class="chosen-select" style="width: 100%" tabindex="2">
+                                    <select id="result21" data-placeholder="Изаберите..." class="chosen-select" style="width: 100%" tabindex="2" name="nazivPropisaVremeVazenja">
 
                                     
 
@@ -9792,7 +9792,7 @@
 
                                     
 
-                                    <select id="result22" data-placeholder="Изаберите..." class="chosen-select" style="width: 100%" tabindex="2">
+                                    <select id="result22" data-placeholder="Изаберите..." class="chosen-select" style="width: 100%" tabindex="2" name="nazivPropisaObrazac">
 
                                     
 
@@ -10008,13 +10008,13 @@
                 <span class="labelNazivi">Да ли постоји регистар издатих аката?</span>
                             
                             <div class="radio">
-                                <label><input type="radio" value="Да" name="postojiRegistar[]">Да</label>
+                                <label><input type="radio" value="Да" name="postojiRegistar">Да</label>
                             </div>
                             <div class="radio">
-                                <label><input type="radio" value="Не" name="postojiRegistar[]">Не</label>
+                                <label><input type="radio" value="Не" name="postojiRegistar">Не</label>
                             </div>
                             <div class="radio">
-                                <label><input type="radio" value="У поступку израде" name="postojiRegistar[]">У поступку израде</label>
+                                <label><input type="radio" value="У поступку израде" name="postojiRegistar">У поступку израде</label>
                             </div>
                             <span class="tooltiptext" id = "tooltiptext1">У зависности од тога да ли регистар издатих аката постоји или не или је у поступку израде, бира се једна од понуђених опција.</span>
 
@@ -10488,6 +10488,7 @@
                             <div class="radio">
                                 <label><input type="radio" name="izmenaPostupak" id="izmenitiPostupak" value="Изменити">Изменити</label>
                             </div>
+
                             <div class="radio">
                                 <label><input type="radio" name="izmenaPostupak" id="neMenjati"  value="Није потребно изменити нити укинути">Није потребно изменити нити укинути</label>
                             </div>
