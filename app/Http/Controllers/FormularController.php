@@ -66,6 +66,7 @@ class FormularController extends Controller
 				'nazivPropisa' => $request->input('nazivPropisa'.$b),
 				'nazivPropisaOpt' => $request->input('nazivPropisaOpt'.$b),
 				'clanoviPropisa' => $request->input('clanoviPropisa'.$a),
+                'b_fajl' => $request->input('b_fajl'.$b),
 			]);
     	}     
     }
