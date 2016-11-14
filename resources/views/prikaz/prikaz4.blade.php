@@ -2,12 +2,12 @@
 @extends('layouts.app')
 @section('style')
 
-<link href="{!! asset('css/prikaz4.css') !!}" media="all" rel="stylesheet" type="text/css" />
+<link href="{{ URL::asset('css/prikaz4.css') }}" media="all" rel="stylesheet" type="text/css" />
 
 @stop
 @section('content')
 
-<body>
+{{-- <body> --}}
 
 
 <div id="demo">
@@ -121,7 +121,7 @@
 
 
 
-</body>
+{{-- </body> --}}
 
 @stop
 
