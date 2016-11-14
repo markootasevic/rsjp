@@ -12,7 +12,10 @@ use App\TroskoviZalbenogPostupka;
 use App\OpstiPodaci;
 use App\UkupanBrojZahteva;
 use App\LiceKojePopunjavaFormular;
-
+use App\svrhaPostupka;
+use App\SvrhaPostupkaStavke;
+use App\PojednostavljenjePostupka;
+use App\PredlogIzmenePostupka;
 
 class FormularController extends Controller
 {
@@ -24,12 +27,17 @@ class FormularController extends Controller
         self::dodajPropise($request, $formular);
         self::dodajFinansijskeIzdatke($request, $formular);
         self::dodajPotrebnaDokumenta($request, $formular);
+
         $zalbeniPostupak = self::dodajZalbeniPostupak($request, $formular);
 		self::dodajTroskoveZalbenogPostupka($request, $zalbeniPostupak);
+        
         $ukupanBrZahteva = UkupanBrojZahteva::create($request->all());
         $liceKojePopunjavaFormular = LiceKojePopunjavaFormular::create($request->all());
         self::dodajOpstePodatke($formular, $ukupanBrZahteva, $liceKojePopunjavaFormular, $request);
         
+		self::dodajSvrhuPostupkaSaStavkama($request, $formular);
+        self::dodajPojednostavljenjeSaPredlogomIzmenePostupka($request, $formular);
+
         return redirect()->back();
 
     }
@@ -258,7 +266,83 @@ class FormularController extends Controller
         $opstiPodaci->nazivIzdatogAkta = $request->input('nazivIzdatogAkta');
 
         $opstiPodaci->save();
+    }
 
+    public static function dodajSvrhuPostupka(Request $request, Formular $formular) {
+        
+        $svrhaPostupka = $formular->svrhePostupka()->create([
+            'svrhaIOpis' => $request->input('svrhaIOpis'),
+            'organKomunikacija' => $request->input('organKomunikacija'),
+        ]);
+
+        return $svrhaPostupka;
+
+    }
+
+    public static function dodajSvrhuPostupkaStavke(Request $request, SvrhaPostupka $svrhaPostupka) {
+
+        for ($i=1; $i <= 10; $i++) { 
+
+            if ($request->input('organizacijaPreklapanje'.$i) != null || $request->input('organizacijaPreklapanje'.$i) != "") {
+
+                $svrhaPostupka->svrhaPostupkaStavke()->create([
+                    'organizacijaPreklapanje' => $request->input('organizacijaPreklapanje'.$i),
+                    'aktivnostPreklapanje' => $request->input('aktivnostPreklapanje'.$i),
+                ]);
+                
+            } else {
+                break;
+            }
+        }
+    }
+
+    public static function dodajSvrhuPostupkaSaStavkama(Request $request, Formular $formular) {
+
+        $svrhaPostupka = self::dodajSvrhuPostupka($request, $formular);
+        self::dodajSvrhuPostupkaStavke($request, $svrhaPostupka);
+    }
+
+
+    public static function dodajPojednostavljenjePostupka(Request $request, Formular $formular) {
+
+        $pojednostavljenjePostupka = $formular->pojednostavljenjePostupaka()->create([
+            'rokPredmeta' => $request->input('rokPredmeta'),
+            'zastarelostObrazlozenje' => $request->input('zastarelostObrazlozenje'),
+            'izmenaPostupak' => $request->input('izmenaPostupak'),
+            'potrebaUkidanje' => $request->input('potrebaUkidanje'),
+            'clanoviIzmena' => $request->input('clanoviIzmena'),
+            'preklapanjeNadleznosti' => $request->input('preklapanjeNadleznosti'),
+            'organiPreklapanje' => $request->input('organiPreklapanje'),
+            'digitalizacijaPostupka' => $request->input('digitalizacijaPostupka'),
+            'preduslovE-Postupak' => $request->input('preduslovE-Postupak'),
+        ]);
+        
+        return $pojednostavljenjePostupka;
+    }
+
+    public static function dodajPredlogIzmenePostupka(Request $request, PojednostavljenjePostupka $pojednostavljenjePostupka) {
+
+        $pojednostavljenjePostupka->predloziIzmenePostupaka()->create([
+            'izmenaPostupak' => $request->input('pojednostavljenje'),
+            'smanjenjeBroja' => $request->input('smanjenjeBroja'),
+            'smanjenjeUcestalosti' => $request->input('smanjenjeUcestalosti'),
+            'eliminacijaDok' => $request->input('eliminacijaDok'),
+            'eliminacijaInfo' => $request->input('eliminacijaInfo'),
+            'skracenjeRoka' => $request->input('skracenjeRoka'),
+            'smanjenjeTroskova' => $request->input('smanjenjeTroskova'),
+            'eliminacijaDupli' => $request->input('eliminacijaDupli'),
+            'pojednostavljenjeObrasca' => $request->input('pojednostavljenjeObrasca'),
+            'uvodjenjeOnline' => $request->input('uvodjenjeOnline'),
+            'propisivanjeObrasca' => $request->input('propisivanjeObrasca'),
+            'produzenjePodnosiocu' => $request->input('produzenjePodnosiocu'),
+            'pripremaUputstva' => $request->input('pripremaUputstva'),
+            'drugo' => $request->input('drugo'), 
+        ]);
+    }
+
+    public static function dodajPojednostavljenjeSaPredlogomIzmenePostupka(Request $request, Formular $formular) {
+        $pojednostavljenjePostupka = self::dodajPojednostavljenjePostupka($request, $formular);
+        self::dodajPredlogIzmenePostupka($request, $pojednostavljenjePostupka);
     }
 
 }

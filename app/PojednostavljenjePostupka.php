@@ -6,16 +6,31 @@ use Illuminate\Database\Eloquent\Model;
 
 class PojednostavljenjePostupka extends Model
 {
+
+    public $timestamps = false;
+    
     protected $table = 'pojednostavljenjepostupka';
     protected $primaryKey = "pojednostavljenjeID";
 
+    protected $fillable = [
+        'rokPredmeta',
+        'zastarelostObrazlozenje',
+        'izmenaPostupak',
+        'potrebaUkidanje',
+        'clanoviIzmena',
+        'preklapanjeNadleznosti',
+        'organiPreklapanje',
+        'digitalizacijaPostupka',
+        'preduslovE-Postupak',                                
+    ];
+
     public function formular()
     {
-        return $this->belongsTo('Formular', 'sifraPostupka', 'sifraPostupka');
+        return $this->belongsTo('App\Formular', 'sifraPostupka', 'sifraPostupka');
     }
 
-    public function preloziIzmenePostupaka()
+    public function predloziIzmenePostupaka()
     {
-        return $this->hasMany('PredlogIzmenePostupka','pojednostavljenjeID','pojednostavljenjeID');
+        return $this->hasMany('App\PredlogIzmenePostupka','pojednostavljenjeID','pojednostavljenjeID');
     }
 }
