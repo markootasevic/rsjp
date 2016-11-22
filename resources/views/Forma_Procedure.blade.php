@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
 
-    <title>Формулар за прикупљање података о административним прoцедурама</title>
+    <title>Образац за прикупљање података о административним прoцедурама</title>
 
     <link rel="stylesheet" href="{{URL::asset('SlickNav-master/dist/slicknav.css')}}" />
     <link rel="stylesheet" href="{{URL::asset('chosen/docsupport/prism.css')}}">
@@ -41,7 +41,7 @@
                 	<div class="row">
                 		<div class="col-lg-12" style="text-align:center">
                 			<h3>
-                				Формулар за попис административних поступака који се односе на пословање
+                				Образац за попис административних поступака који се односе на пословање
                 			</h3>
                 		</div>
                     </div>

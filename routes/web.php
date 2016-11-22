@@ -32,3 +32,23 @@ Route::get('/trifke' ,function() {
 Route::get('/danijel' ,function() {
 	return view('prikaz/prikaz3');
 });
+
+Route::get('/prikaz4_home' ,function() {
+	return view('prikaz/prikaz4_home');
+});
+
+Route::get('/prikaz4_table' ,function() {
+	return view('prikaz/prikaz4_table');
+});
+
+Route::get('/prikaz3_table' ,function() {
+	return view('prikaz/prikaz3_table');
+});
+
+Route::get('/prikaz3_home' ,function() {
+	return view('prikaz/prikaz3_home');
+});
+
+Route::get('/prikaz3_zaposleni' ,function() {
+	return view('prikaz/prikaz3_zaposleni');
+});
