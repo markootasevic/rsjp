@@ -49,8 +49,8 @@
         <div class="sidebar content-box" style="display: block;">
                 <ul class="nav">
                     <!-- !!! Srediti rute da vode na odgovarajuce strane !!! -->
-                    <li class="current"><a href="prikaz4_home.php"><i class="glyphicon glyphicon-home"></i> Почетна страна</a></li>
-                    <li><a href="prikaz4_table.php"><i class="glyphicon glyphicon-list"></i> Поступци</a></li>
+                    <li class="current"><a href="prikaz4_home"><i class="glyphicon glyphicon-home"></i> Почетна страна</a></li>
+                    <li><a href="prikaz4_table"><i class="glyphicon glyphicon-list"></i> Поступци</a></li>
                 </ul>
              </div>
       </div>

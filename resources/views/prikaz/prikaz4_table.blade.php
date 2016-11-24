@@ -64,8 +64,8 @@
 		  	<div class="sidebar content-box" style="display: block;">
                 <ul class="nav">
                     <!-- Main menu -->
-                    <li><a href="prikaz4-index.html"><i class="glyphicon glyphicon-home"></i> Почетна страна</a></li>
-                    <li class="current"><a href="prikaz4-table.html"><i class="glyphicon glyphicon-list"></i> Поступци</a></li>
+                    <li><a href="prikaz4_home"><i class="glyphicon glyphicon-home"></i> Почетна страна</a></li>
+                    <li class="current"><a href="prikaz4_table"><i class="glyphicon glyphicon-list"></i> Поступци</a></li>
                     </ul>
              </div>
 		  </div>
@@ -119,7 +119,7 @@
 	function test(){	
 	document.getElementById('status1').style.color = "green";
 	document.getElementById('status1').innerHTML = "Попуњен, чека одобрење";
-	document.getElementById('button1').style.visibility = "hidden";
+	document.getElementById('button1').disabled = "true";
 	};
 </script>
 

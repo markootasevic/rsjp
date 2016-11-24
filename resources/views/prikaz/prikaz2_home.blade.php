@@ -43,9 +43,9 @@
         <div class="sidebar content-box" style="display: block;">
                 <ul class="nav">
                     <!-- Main menu -->
-                    <li class="current"><a href="prikaz3_home"><i class="glyphicon glyphicon-home"></i> Почетна страна</a></li>
-                    <li><a href="prikaz3_table"><i class="glyphicon glyphicon-list"></i> Поступци</a></li>
-                    <li><a href="prikaz3_zaposleni"><i class="glyphicon glyphicon-tasks"></i> Запослени</a></li>
+                    <li class="current"><a href="prikaz2_home"><i class="glyphicon glyphicon-home"></i> Почетна страна</a></li>
+                    <li><a href="prikaz2_table"><i class="glyphicon glyphicon-list"></i> Поступци</a></li>
+                    <li><a href="prikaz2_zaposleni"><i class="glyphicon glyphicon-tasks"></i> Запослени</a></li>
                 </ul>
              </div>
       </div>

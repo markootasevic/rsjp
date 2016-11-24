@@ -41,14 +41,38 @@ Route::get('/prikaz4_table' ,function() {
 	return view('prikaz/prikaz4_table');
 });
 
-Route::get('/prikaz3_table' ,function() {
-	return view('prikaz/prikaz3_table');
-});
-
 Route::get('/prikaz3_home' ,function() {
 	return view('prikaz/prikaz3_home');
 });
 
+Route::get('/prikaz3_table' ,function() {
+	return view('prikaz/prikaz3_table');
+});
+
 Route::get('/prikaz3_zaposleni' ,function() {
 	return view('prikaz/prikaz3_zaposleni');
+});
+
+Route::get('/prikaz2_home' ,function() {
+	return view('prikaz/prikaz2_home');
+});
+
+Route::get('/prikaz2_table' ,function() {
+	return view('prikaz/prikaz2_table');
+});
+
+Route::get('/prikaz2_zaposleni' ,function() {
+	return view('prikaz/prikaz2_zaposleni');
+});
+
+Route::get('/prikaz1_home' ,function() {
+	return view('prikaz/prikaz1_home');
+});
+
+Route::get('/prikaz1_table' ,function() {
+	return view('prikaz/prikaz1_table');
+});
+
+Route::get('/prikaz1_zaposleni' ,function() {
+	return view('prikaz/prikaz1_zaposleni');
 });

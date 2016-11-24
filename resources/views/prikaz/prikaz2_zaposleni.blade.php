@@ -62,9 +62,9 @@
 		  	<div class="sidebar content-box" style="display: block;">
                 <ul class="nav">
                     <!-- Main menu -->
-                    <li><a href="prikaz3_home"><i class="glyphicon glyphicon-home"></i> Почетна страна</a></li>
-                    <li><a href="prikaz3_table"><i class="glyphicon glyphicon-list"></i> Поступци</a></li>
-                    <li class="current"><a href="prikaz3_zaposleni"><i class="glyphicon glyphicon-tasks"></i> Запослени</a></li>
+                    <li><a href="prikaz2_home"><i class="glyphicon glyphicon-home"></i> Почетна страна</a></li>
+                    <li><a href="prikaz2_table"><i class="glyphicon glyphicon-list"></i> Поступци</a></li>
+                    <li class="current"><a href="prikaz2_zaposleni"><i class="glyphicon glyphicon-tasks"></i> Запослени</a></li>
                 </ul>
              </div>
 		  </div>
@@ -74,29 +74,40 @@
 	  				<div class="col-md-12">
 	  					<div class="content-box-large">
 			  				<div class="panel-heading">
-					            <div class="panel-title"><h4>ОДГОВОРНА ЛИЦА ЗА ПОПУЊАВАЊЕ ОБРАСЦА</h4></div>
+					            <div class="panel-title"><h3>ОДГОВОРНА ЛИЦА ЗА ПОПУЊАВАЊЕ ОБРАСЦА</h3></div>
 					        </div>
 			  				<div class="panel-body">
 			  					<form class="form-horizontal" role="form">
 			  					<div class="form-group">
-			  					<div class="col-sm-2">
-			  					<input type="button" class="btn btn-primary" id="prethodniZaposleni" value="Претходни">
-			  					</div>				  
-								  <div class="col-sm-8">
-					  				<!-- <select class="form-control" id="zaposleni">  				
-					  				<option value="Марко Петровић">Марко Петровић</option>
-					  				<option value="Митар Мирић">Митар Мирић</option>
-					  				<option value="Лука Ивковић">Лука Ивковић</option>
-					  				<option value="Ана Говедарица">Ана Говедарица</option>
-					  				</select> -->
-					  				<span class="form-control" id="zaposleni"></span>
-					  				</div>
-					  				<div class="col-sm-2">
-			  					<input type="button" class="btn btn-primary" id="sledeciZaposleni" value="Следећи">
-			  					</div>
+			  					<div class="col-md-2"></div>
+			  					<div class="col-md-8">
+			  						<h4>Изаберите запосленог:</h4>
+			  								<select class="form-control" style="width: 100%;">
+										    <optgroup label="Министарство">
+										      <option>Запослени 1</option>
+										      <option>Запослени 2</option>
+										      <option>Запослени 3</option>
+										    </optgroup>
+										    <optgroup label="Подорганизациона јединица 1">
+										      <option>Запослени 4</option>
+										      <option>Запослени 5</option>
+										      <option>Запослени 6</option>
+										    </optgroup>
+										    <optgroup label="Подорганизациона јединица 2">
+										      <option>Запослени 7</option>
+										      <option>Запослени 8</option>
+										      <option>Запослени 9</option>
+										    </optgroup>
+										    <optgroup label="Подорганизациона јединица 3">
+										      <option>Запослени 10</option>
+										      <option>Запослени 11</option>
+										      <option>Запослени 12</option>
+										    </optgroup>
+										  </select>	
+								</div>
 								  </div>
-								  <br/>
-								  <br/>
+								  <br/>	
+								  <br/>						  
 
 								  <div class="form-group">
 								    <label class="col-sm-2 control-label">Контакт телефон</label>
@@ -111,6 +122,7 @@
 								      <span class="form-control"></span>
 								    </div>
 								  </div>
+
 								  <div class="form-group">
 								    <label class="col-sm-2 control-label">Број решених поступака</label>
 								    <div class="col-sm-8">
@@ -158,67 +170,20 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="{{URL::asset('Privilegije/bootstrap/js/bootstrap.min.js')}}"></script>
 
-    <script src="{{URL::asset('Privilegije/vendors/form-helpers/js/bootstrap-formhelpers.min.js')}}"></script>
-
     <script src="{{URL::asset('Privilegije/vendors/select/bootstrap-select.min.js')}}"></script>
-
-    <script src="{{URL::asset('Privilegije/vendors/tags/js/bootstrap-tags.min.js')}}"></script>
-
-    <script src="{{URL::asset('Privilegije/vendors/mask/jquery.maskedinput.min.js')}}"></script>
-
-    <script src="{{URL::asset('Privilegije/vendors/moment/moment.min.js')}}"></script>
-
-    <script src="{{URL::asset('Privilegije/vendors/wizard/jquery.bootstrap.wizard.min.js')}}"></script>
-
-     <!-- bootstrap-datetimepicker -->
-     <link href="{{URL::asset('Privilegije/vendors/bootstrap-datetimepicker/datetimepicker.css')}}" rel="stylesheet">
-     <script src="{{URL::asset('Privilegije/vendors/bootstrap-datetimepicker/bootstrap-datetimepicker.js')}}"></script> 
-
-
-    <link href="//cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/bootstrap3-editable/css/bootstrap-editable.css" rel="stylesheet"/>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/bootstrap3-editable/js/bootstrap-editable.min.js"></script>
 
     <script src="{{URL::asset('Privilegije/js/custom.js')}}"></script>
     <script src="{{URL::asset('Privilegije/js/forms.js')}}"></script>
 
-    <script type="text/javascript">
+    <script src="{{URL::asset('Privilegije/vendors/form-helpers/js/bootstrap-formhelpers.min.js')}}"></script>
 
-    var arr = ['Марко Петровић', 'Лука Ивановић', 'Ана Ђорђевић', 'Тијана Станковић'];
-var i = 0;
+    <script src="{{URL::asset('Privilegije/vendors/select/bootstrap-select.min.js')}}"></script>
 
-function nextItem() {
-    i = i + 1; // increase i by one
-    i = i % arr.length; // if we've gone too high, start from `0` again
-    return arr[i]; // give us back the item of where we are now
-}
+  <script src="{{URL::asset('Privilegije/js/forms.js')}}"></script>
 
-function prevItem() {
-    if (i === 0) { // i would become 0
-        i = arr.length; // so put it at the other end of the array
-    }
-    i = i - 1; // decrease by one
-    return arr[i]; // give us back the item of where we are now
-}
+    <link href="{{URL::asset('Privilegije/css/forms.css')}}" rel="stylesheet">
 
-window.addEventListener('load', function () {
-    document.getElementById('zaposleni').innerHTML = arr[0]; // initial value
-    document.getElementById('prethodniZaposleni').addEventListener(
-        'click', // we want to listen for a click
-        function (e) { // the e here is the event itself
-            document.getElementById('zaposleni').innerHTML = prevItem();
-        }
-    );
-    
-    document.getElementById('sledeciZaposleni').addEventListener(
-        'click', // we want to listen for a click
-        function (e) { // the e here is the event itself
-            document.getElementById('zaposleni').innerHTML = nextItem();
-        }
-    );
-});
+</body>
 
-    </script>
-
-
-  </body>
-</html>
+  <link href="{{URL::asset('Privilegije/vendors/select/bootstrap-select.min.css')}}" rel="stylesheet">
+</html>								

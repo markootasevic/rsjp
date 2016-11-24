@@ -21,6 +21,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+    <style type="text/css">
+    	.optionGroup {
+    font-weight: bold;
+
+}
+    </style>
+
  
   </head>
   <body>
@@ -55,33 +62,50 @@
     <div class="page-content">
 
     	<div class="row">
-
-
 		  <div class="col-md-2">
 		  	<div class="sidebar content-box" style="display: block;">
                 <ul class="nav">
                     <!-- Main menu -->
-                    <li><a href="prikaz3_home"><i class="glyphicon glyphicon-home"></i> Почетна страна</a></li>
-                    <li class="current"><a href="prikaz3_table"><i class="glyphicon glyphicon-list"></i> Поступци</a></li>
-                    <li><a href="prikaz3_zaposleni"><i class="glyphicon glyphicon-tasks"></i> Запослени</a></li>
+                    <li><a href="prikaz2_home"><i class="glyphicon glyphicon-home"></i> Почетна страна</a></li>
+                    <li class="current"><a href="prikaz2_table"><i class="glyphicon glyphicon-list"></i> Поступци</a></li>
+                    <li><a href="prikaz2_zaposleni"><i class="glyphicon glyphicon-tasks"></i> Запослени</a></li>
                     
                     </ul>
              </div>
 		  </div>
 
-		   <div class="col-md-10">		   
+		   <div class="col-md-10">	
+
     			<div class="col-md-12">
-    			<div class="content-box-large">
-    				<form id="form1">
+
+
+    			<div class="content-box-large">    				
+
+
 		  				<div class="panel-heading">	
+
 		  				<button type="button" class="btn btn-default btn-md pull-right" data-toggle="collapse" data-target="#collapse1">
   							<span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
 							</button>
-							<div class="panel-title"><h3>УПРАВЉАЊЕ ПОСТУПЦИМА</h3></div>							
+		  				
+							<div class="panel-title"><h3>ПОДОРГАНИЗАЦИОНЕ ЈЕДИНИЦЕ У ОКВИРУ ИНСТИТУЦИЈЕ</h3></div>
+							<br/>							
+			  						<h4>Изаберите подорганизациону јединицу</h4>
+			  							<select class="form-control">
+			  								<option value="" selected="" hidden disabled="">Изаберите</option>
+			  								<option>Министарство</option>
+										    <option>Сателит 1</option>
+										    <option>Сателит 2</option>
+										    <option>Сателит 3</option>
+										    
+										  </select>			
+			  					
 						</div>	
+
+						<div class="panel-body">
 						<div id="collapse1" class="panel-collapse collapse in">					
-		  				<div class="panel-body">	
-		  				<label for="zaposleni"><h5>Изаберите запосленог из падајућег менија како бисте му доделили поступак:</h5></label>
+		  					<div class="panel-title" style="text-align: center"><h3>УПРАВЉАЊЕ ПОСТУПЦИМА</h3></div>
+		  				<label for="zaposleni"><h4>Изаберите запосленог из падајућег менија како бисте му доделили поступак:</h4></label>
 		  				<select class="form-control" id="zaposleni">
 		  				<option value="" selected="" hidden disabled="">Изаберите</option>
 		  				<option value="Марко Петровић">Марко Петровић</option>
@@ -90,7 +114,7 @@
 		  				<option value="Ана Говедарица">Ана Говедарица</option>
 		  				</select>
 		  				<br/>
-		  				</form>
+		  				
 
 		  				<form id="form2">
 		  				<select id='public-methods' multiple='multiple' style="width: 100%">
@@ -103,19 +127,17 @@
     				<option value='elem_7'>Уписивање у војни регистар</option>
     				<option value='elem_8'>Завођење предлога за измену и допуну закона о саобраћају</option>
     				<option value='elem_9'>Сортирање базе података</option>
-       				<option value='elem_10'>Решавање спорних случајева</option>       				
-  				</select>
-  				<br/>
+       				<option value='elem_10'>Решавање спорних случајева</option>
+       				</select>
+  					<br/>
 
-  				<button type="button" id='deselect-all' class="btn btn-danger">Поништи</button>  		  				
-  				<button type="button"  class="btn btn-success pull-right">Потврди</button>			</div>  
-
-    			   </form>
+  					<button type="button" id='deselect-all' class="btn btn-danger">Поништи</button>
+  					<button type="button"  class="btn btn-success pull-right">Потврди</button>	
+  					</form>
+  					</div>    			   
     			   </div>
-    			   <br/>
-
-    			   </div>
-    			   </div>
+    			  </div>
+    			 </div>
 
  			  <div class="col-md-12">
     			   
@@ -151,18 +173,11 @@
 								<td>Gecko</td>
 								<td><a href="http://www.mozilla.org">Firefox 1.0</a></td>
 								<td>Win 98+ / OSX.2+</td>
-								<td>
-									
-									<select style="border:0; width: 100%">
-									<option selected="" hidden disabled="">Изаберите</option>
-										<option>Марко</option>
-										<option>Милан</option>
-									</select>
-
+								<td>Марко Марковић
 								</td>
 								<td class="center">A</td>
-								<td class="center">1.7</td>
-								<td class="center"> <button type="button" class="btn btn-info btn-sm" id="proba1" onclick="changeColor()">Сачувај</button></td>
+								<td class="center" style="color: orange;" id="td1">Попуњен, чека одобрење</td>
+								<td class="center"> <button type="button" class="btn btn-info btn-sm" id="proba1" onclick="changeColor()">Одобри</button></td>
 								</tr>
 
 								<tr class="gradeA">
@@ -176,7 +191,7 @@
 								</td>
 								<td class="center">A</td>
 								<td class="center">1.7</td>
-								<td class="center"> <button type="button" class="btn btn-info btn-sm">Сачувај</button></td>
+								<td class="center"> <button type="button" class="btn btn-info btn-sm">Одобри</button></td>
 								</tr>
 								<tr class="gradeA">
 								<td>Gecko</td>
@@ -188,7 +203,7 @@
 								</td>
 								<td class="center">A</td>
 								<td class="center">1.7</td>
-								<td class="center"> <button type="button" class="btn btn-info btn-sm">Сачувај</button></td>
+								<td class="center"> <button type="button" class="btn btn-info btn-sm">Одобри</button></td>
 								</tr>
 								<tr class="gradeA">
 								<td>Gecko</td>
@@ -205,7 +220,7 @@
 								</td>
 								<td class="center">A</td>
 								<td class="center">Закон о управном поступку</td>
-								<td class="center"> <button type="button" class="btn btn-info btn-sm">Сачувај</button></td>
+								<td class="center"> <button type="button" class="btn btn-info btn-sm">Одобри</button></td>
 								</tr>
 								
 								<tr class="gradeA">
@@ -223,7 +238,7 @@
 								</td>
 								<td class="center">A</td>
 								<td class="center">1.7</td>
-								<td class="center"> <button type="button" class="btn btn-info btn-sm">Сачувај</button></td>
+								<td class="center"> <button type="button" class="btn btn-info btn-sm">Одобри</button></td>
 								</tr>
 								<tr class="gradeA">
 								<td>Gecko</td>
@@ -240,7 +255,7 @@
 								</td>
 								<td class="center">A</td>
 								<td class="center">1.7</td>
-								<td class="center"> <button type="button" class="btn btn-info btn-sm">Сачувај</button></td>
+								<td class="center"> <button type="button" class="btn btn-info btn-sm">Одобри</button></td>
 								</tr>
 								<tr class="gradeA">
 								<td>Gecko</td>
@@ -257,7 +272,7 @@
 								</td>
 								<td class="center">A</td>
 								<td class="center">1.7</td>
-								<td class="center"> <button type="button" class="btn btn-info btn-sm">Сачувај</button></td>
+								<td class="center"> <button type="button" class="btn btn-info btn-sm">Одобри</button></td>
 								</tr>
 								<tr class="gradeA">
 								<td>Gecko</td>
@@ -274,7 +289,7 @@
 								</td>
 								<td class="center">A</td>
 								<td class="center">1.7</td>
-								<td class="center"> <button type="button" class="btn btn-info btn-sm">Сачувај</button></td>
+								<td class="center"> <button type="button" class="btn btn-info btn-sm">Одобри</button></td>
 								</tr>
 								<tr class="gradeA">
 								<td>Gecko</td>
@@ -291,7 +306,7 @@
 								</td>
 								<td class="center">A</td>
 								<td class="center">1.7</td>
-								<td class="center"> <button type="button" class="btn btn-info btn-sm">Сачувај</button></td>
+								<td class="center"> <button type="button" class="btn btn-info btn-sm">Одобри</button></td>
 								</tr>
 								<tr class="gradeA">
 								<td>Gecko</td>
@@ -308,7 +323,7 @@
 								</td>
 								<td class="center">A</td>
 								<td class="center">1.7</td>
-								<td class="center"> <button type="button" class="btn btn-info btn-sm">Сачувај</button></td>
+								<td class="center"> <button type="button" class="btn btn-info btn-sm">Одобри</button></td>
 								</tr>
 								<tr class="gradeA">
 								<td>Gecko</td>
@@ -325,7 +340,7 @@
 								</td>
 								<td class="center">A</td>
 								<td class="center">1.7</td>
-								<td class="center"> <button type="button" class="btn btn-info btn-sm">Сачувај</button></td>
+								<td class="center"> <button type="button" class="btn btn-info btn-sm">Одобри</button></td>
 								</tr>
 								<tr class="gradeA">
 								<td>Gecko</td>
@@ -342,7 +357,7 @@
 								</td>
 								<td class="center">A</td>
 								<td class="center">1.7</td>
-								<td class="center"> <button type="button" class="btn btn-info btn-sm">Сачувај</button></td>
+								<td class="center"> <button type="button" class="btn btn-info btn-sm">Одобри</button></td>
 								</tr>
 								<tr class="gradeA">
 								<td>Gecko</td>
@@ -359,7 +374,7 @@
 								</td>
 								<td class="center">A</td>
 								<td class="center">1.7</td>
-								<td class="center"> <button type="button" class="btn btn-info btn-sm">Сачувај</button></td>
+								<td class="center"> <button type="button" class="btn btn-info btn-sm">Одобри</button></td>
 								</tr>
 								<tr class="gradeA">
 								<td>Gecko</td>
@@ -376,7 +391,7 @@
 								</td>
 								<td class="center">A</td>
 								<td class="center">1.7</td>
-								<td class="center"> <button type="button" class="btn btn-info btn-sm">Сачувај</button></td>
+								<td class="center"> <button type="button" class="btn btn-info btn-sm">Одобри</button></td>
 								</tr>
 								<tr class="gradeA">
 								<td>Gecko</td>
@@ -393,7 +408,7 @@
 								</td>
 								<td class="center">A</td>
 								<td class="center">1.7</td>
-								<td class="center"> <button type="button" class="btn btn-info btn-sm">Сачувај</button></td>
+								<td class="center"> <button type="button" class="btn btn-info btn-sm">Одобри</button></td>
 								</tr>
 								<tr class="gradeA">
 								<td>Gecko</td>
@@ -410,7 +425,7 @@
 								</td>
 								<td class="center">A</td>
 								<td class="center">1.7</td>
-								<td class="center"> <button type="button" class="btn btn-info btn-sm">Сачувај</button></td>
+								<td class="center"> <button type="button" class="btn btn-info btn-sm">Одобри</button></td>
 								</tr>
 								<tr class="gradeA">
 								<td>Gecko</td>
@@ -427,7 +442,7 @@
 								</td>
 								<td class="center">A</td>
 								<td class="center">1.7</td>
-								<td class="center"> <button type="button" class="btn btn-info btn-sm">Сачувај</button></td>
+								<td class="center"> <button type="button" class="btn btn-info btn-sm">Одобри</button></td>
 								</tr>
 								<tr class="gradeA">
 								<td>Gecko</td>
@@ -444,7 +459,7 @@
 								</td>
 								<td class="center">A</td>
 								<td class="center">1.7</td>
-								<td class="center"> <button type="button" class="btn btn-info btn-sm">Сачувај</button></td>
+								<td class="center"> <button type="button" class="btn btn-info btn-sm">Одобри</button></td>
 								</tr>
 								<tr class="gradeA">
 								<td>Gecko</td>
@@ -461,7 +476,7 @@
 								</td>
 								<td class="center">A</td>
 								<td class="center">1.7</td>
-								<td class="center"> <button type="button" class="btn btn-info btn-sm">Сачувај</button></td>
+								<td class="center"> <button type="button" class="btn btn-info btn-sm">Одобри</button></td>
 								</tr>
 								<tr class="gradeA">
 								<td>Gecko</td>
@@ -478,7 +493,7 @@
 								</td>
 								<td class="center">A</td>
 								<td class="center">1.7</td>
-								<td class="center"> <button type="button" class="btn btn-info btn-sm">Сачувај</button></td>
+								<td class="center"> <button type="button" class="btn btn-info btn-sm">Одобри</button></td>
 								</tr>
 								<tr class="gradeA">
 								<td>Gecko</td>
@@ -491,7 +506,7 @@
 								</td>
 								<td class="center">A</td>
 								<td class="center">1.7</td>
-								<td class="center"> <button type="button" class="btn btn-info btn-sm">Сачувај</button></td>
+								<td class="center"> <button type="button" class="btn btn-info btn-sm">Одобри</button></td>
 								</tr>
 								<tr class="gradeA">
 								<td>Gecko</td>
@@ -508,7 +523,7 @@
 								</td>
 								<td class="center">A</td>
 								<td class="center">1.7</td>
-								<td class="center"> <button type="button" class="btn btn-info btn-sm">Сачувај</button></td>
+								<td class="center"> <button type="button" class="btn btn-info btn-sm">Одобри</button></td>
 								</tr>
 								<tr class="gradeA">
 								<td>Gecko</td>
@@ -525,7 +540,7 @@
 								</td>
 								<td class="center">A</td>
 								<td class="center">1.7</td>
-								<td class="center"> <button type="button" class="btn btn-info btn-sm">Сачувај</button></td>
+								<td class="center"> <button type="button" class="btn btn-info btn-sm">Одобри</button></td>
 								</tr>
 								<tr class="gradeA">
 								<td>Gecko</td>
@@ -542,7 +557,7 @@
 								</td>
 								<td class="center">A</td>
 								<td class="center">1.7</td>
-								<td class="center"> <button type="button" class="btn btn-info btn-sm">Сачувај</button></td>
+								<td class="center"> <button type="button" class="btn btn-info btn-sm">Одобри</button></td>
 								</tr>
 								<tr class="gradeA">
 								<td>Gecko</td>
@@ -559,7 +574,7 @@
 								</td>
 								<td class="center">A</td>
 								<td class="center">1.7</td>
-								<td class="center"> <button type="button" class="btn btn-info btn-sm">Сачувај</button></td>
+								<td class="center"> <button type="button" class="btn btn-info btn-sm">Одобри</button></td>
 								</tr>
 								<tr class="gradeA">
 								<td>Gecko</td>
@@ -576,7 +591,7 @@
 								</td>
 								<td class="center">A</td>
 								<td class="center">1.7</td>
-								<td class="center"> <button type="button" class="btn btn-info btn-sm">Сачувај</button></td>
+								<td class="center"> <button type="button" class="btn btn-info btn-sm">Одобри</button></td>
 								</tr>
 								<tr class="gradeA">
 								<td>Gecko</td>
@@ -593,7 +608,7 @@
 								</td>
 								<td class="center">A</td>
 								<td class="center">1.7</td>
-								<td class="center"> <button type="button" class="btn btn-info btn-sm">Сачувај</button></td>
+								<td class="center"> <button type="button" class="btn btn-info btn-sm">Одобри</button></td>
 								</tr>
 								<tr class="gradeA">
 								<td>Gecko</td>
@@ -610,7 +625,7 @@
 								</td>
 								<td class="center">A</td>
 								<td class="center">1.7</td>
-								<td class="center"> <button type="button" class="btn btn-info btn-sm">Сачувај</button></td>
+								<td class="center"> <button type="button" class="btn btn-info btn-sm">Одобри</button></td>
 								</tr>
 								<tr class="gradeA">
 								<td>Gecko</td>
@@ -627,7 +642,7 @@
 								</td>
 								<td class="center">A</td>
 								<td class="center">1.7</td>
-								<td class="center"> <button type="button" class="btn btn-info btn-sm">Сачувај</button></td>
+								<td class="center"> <button type="button" class="btn btn-info btn-sm">Одобри</button></td>
 								</tr>
 
 							
@@ -721,6 +736,19 @@
    <script src="{{URL::asset('Privilegije/js/tables.js')}}"></script>
   <script src="{{URL::asset('Privilegije/js/jquery.multi-select.js')}}"></script>
   <script src="{{URL::asset('Privilegije/js/custom.js')}}"></script>
+  <script src="{{URL::asset('Privilegije/vendors/select/bootstrap-select.min.js')}}"></script>
+
+  <script src="{{URL::asset('Privilegije/vendors/form-helpers/js/bootstrap-formhelpers.min.js')}}"></script>
+
+    <script src="{{URL::asset('Privilegije/vendors/select/bootstrap-select.min.js')}}"></script>
+
+  <script src="{{URL::asset('Privilegije/js/forms.js')}}"></script>
+
+  <link href="{{URL::asset('Privilegije/vendors/form-helpers/css/bootstrap-formhelpers.min.css')}}" rel="stylesheet">
+    <link href="{{URL::asset('Privilegije/vendors/select/bootstrap-select.min.css')}}" rel="stylesheet">
+    <link href="{{URL::asset('Privilegije/vendors/tags/css/bootstrap-tags.css')}}" rel="stylesheet">
+
+    <link href="{{URL::asset('Privilegije/css/forms.css')}}" rel="stylesheet">
 
   <script type="text/javascript">
   $('#public-methods').multiSelect({
@@ -732,6 +760,16 @@
   $('#public-methods').multiSelect('deselect_all');
   return false;
 });
+  </script>
+
+  <script type="text/javascript">
+  	
+  	function changeColor() {
+  		document.getElementById('td1').innerHTML = "Одобрен";
+  		document.getElementById('td1').style.color = "green";
+  		document.getElementById('proba1').disabled = "true";
+
+  	}
   </script>
 
 

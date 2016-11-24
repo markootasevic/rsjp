@@ -23,6 +23,8 @@
 
 <body>
 
+ufufu
+
     <div id="navigacija">
     <a href="#" id="back-to-top" title="Врх стране"><img src="{{URL::asset('images/arrow-up.png')}}" height="60px" width="60px"></a>
 
